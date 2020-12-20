@@ -1,6 +1,6 @@
-#The Whiznium Documentation
+# The Whiznium Documentation
 
-###General topics
+### General topics
 
 [Setting Up A Whiznium Development Environment On Your Workstation](./setup.md)
 
@@ -12,7 +12,7 @@
 
 [Working With Cloud-based Whiznium (WaaS)](./whiz_cloud.md)
 
-==WhizniumSBE topics==
+### WhizniumSBE topics
 
 [WhizniumSBE Development Workflow](./sbe.md)
 
@@ -22,7 +22,7 @@
 
 [WhizniumSBE Glossary Of Terms](./sbegloss.md)
 
-==WhizniumDBE topics==
+### WhizniumDBE topics
 
 [WhizniumDBE Development Workflow](./dbe.md)
 

@@ -1,8 +1,8 @@
-##Setting Up Whiznium On Your Workstation
+# Setting Up Whiznium On Your Workstation
 
 The following instructions have been tested on a Linux workstation running ubuntu 20.04.
 
-###Overview
+### Overview
 
 To ensure maximum flexibility for both single-user and shared development environments - along with the possibility to have one dedicated SDK for each project (a very common situation for Yocto Embedded Linux software development) - the Whiznium development environment spans across three folders:
 
@@ -12,7 +12,7 @@ To ensure maximum flexibility for both single-user and shared development enviro
 
 - the deployment folder ``${WHIZROOT}`` (in this reference installation to be found at ``/home/<username>/whiznium``) contains the binary results of Whiznium projects after build along with eventual XML preferences files. For cross-compilation scenarious, this folder would need to be copied to the target Embedded Linux system.
 
-###Obtaining and setting up the folder structure
+### Obtaining and setting up the folder structure
 
 - create directories ``/home/<username>/whiznium_dev``, ``/home/<username>/whiznium``, ``/home/<username>/whiznium_sdk``
 
@@ -48,7 +48,7 @@ nano ${WHIZDEVROOT}/rep/wzem/_ini/dbswzem_ubuntu/CreateDbsWzemMar.sql
 sudo mariadb < ${WHIZDEVROOT}/rep/wzem/_ini/dbswzem_ubuntu/CreateDbsWzemMar.sql
 ```
 
-###Test-running WhizniumSBE Engine Monitor
+### Test-running WhizniumSBE Engine Monitor
 
 This simple test serves as a quick validation for the setup, insuring that everything is in place.
 
