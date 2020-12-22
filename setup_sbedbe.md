@@ -1,10 +1,10 @@
 [back](./README.md)
 
+# Setting Up WhizniumSBE On Your Workstation
+
 The following instructions have been tested on a Linux workstation running ubuntu 20.04.
 
 Note: for now it is required to have a local Whizniun installation as obtained by the following instructions. In future, _Whiznium as a Service_, the cloud-based Whiznium solution provided by MPSI Technologies can substitute as a convenient alternative. This solution has the advantage of automatically coming with the latest Whiznium updates.
-
-# Setting Up WhizniumSBE On Your Workstation
 
 ## Building WhizniumSBE from source
 
@@ -31,9 +31,9 @@ Note that clients will get confused when different applications (such as Whizniu
 
 ## Test-running WhizniumSBE
 
-WhizniumSBE is a WhizniumSBE project and as such can leverage WhizniumSBE's out-of-the-box feature of distributed computing. The runtime setup consists of the database, one _main engine_ the clients talk to and two _operation engines_ which perform atomic computer operations, e.g. composing single source code files. This scenario is depicted below:
+WhizniumSBE is a WhizniumSBE project and as such can leverage WhizniumSBE's out-of-the-box feature of distributed computing. The runtime setup consists of the database, one _main engine_ the clients talk to and two _operation engines_ which perform atomic compute operations, e.g. composing single source code files. This scenario is depicted below:
 
-<mark>...</mark>
+![](setup_sbedbe/Wznmd_Wznmopd.png)
 
 To prepare WhizniumSBE for this configuration, perform the following steps:
 
@@ -86,12 +86,13 @@ cd /home/<username>/whiznium/bin/wznmopd2
 Wznmd >> showNodes
 ```
 
-- e.g. in Chrome, open http://127.0.0.1:13106 and log in with username/password: temp/asdf1234
+- e.g. in Chrome, open http://127.0.0.1:13106
 
 This screen should show up:
 
-<mark>...</mark>
+![](setup_sbedbe/Wznmd.png)
 
+- log in with username/password: temp/asdf1234
 - in the _Session_ menu, choose _Close session_
 - back on the (1) command line, type ``Wznmd >> quit``
 
@@ -143,7 +144,7 @@ cp ../wznmd/server.* .
 
 The WhizniumDBE runtime configuration, in analogy to WhizniumSBE is depicted below:
 
-<mark>...</mark>
+![](setup_sbedbe/Wdbed_Wdbeopd.png)
 
 To prepare WhizniumDBE for this configuration, perform the following steps:
 
@@ -196,12 +197,13 @@ cd /home/<username>/whiznium/bin/wdbeopd2
 Wdbed >> showNodes
 ```
 
-- e.g. in Chrome, open http://127.0.0.1:<mark>13105</mark> and log in with username/password: temp/asdf1234
+- e.g. in Chrome, open http://127.0.0.1:<mark>13105</mark>
 
 This screen should show up:
 
-<mark>...</mark>
+![](setup_sbedbe/Wdbed.png)
 
+- log in with username/password: temp/asdf1234
 - in the _Session_ menu, choose _Close session_
 - back on the (1) command line, type ``Wdbed >> quit``
 
@@ -226,4 +228,4 @@ A description of how to include WhizniumDBE in the everyday developer experience
 
 ---
 
-In case of problems, please do not hesitate to contact MPSI Technologles at (support@mpsitech.com)[mailto:support@mpsitech.com].
+In case of problems, please do not hesitate to contact MPSI Technologles at [support@mpsitech.com](mailto:support@mpsitech.com).

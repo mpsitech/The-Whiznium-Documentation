@@ -1,5 +1,7 @@
 # The Whiznium Documentation
 
+Note: you are free to use this documentation offline by cloning it and use e.g. VSCode for Markdown rendering.
+
 ## General topics
 
 [Setting Up A Whiznium Development Environment On Your Workstation](./setup.md)
@@ -26,7 +28,7 @@
 
 [WhizniumDBE Development Workflow](./dbe.md)
 
-[Setting Up The Whiznium StarterKit Device Project](./wskd.md)
+<!-- [Setting Up The Whiznium StarterKit Device Project](./wskd.md) -->
 
 <!-- [WhizniumDBE Model Files](./dbemdl.md) -->
 
@@ -34,4 +36,4 @@
 
 ---
 
-In case of problems, please do not hesitate to contact MPSI Technologles at (support@mpsitech.com)[mailto:support@mpsitech.com].
+In case of problems, please do not hesitate to contact MPSI Technologles at [support@mpsitech.com](mailto:support@mpsitech.com).

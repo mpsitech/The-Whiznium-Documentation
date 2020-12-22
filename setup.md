@@ -12,11 +12,11 @@ To ensure maximum flexibility for both single-user and shared development enviro
 
 - the SDK folder ``${WHIZSDKROOT}`` (in this reference installation to be found at ``/home/<username>/whiznium_sdk``) is a local folder in which builds of Whiznium applications take place. After basic setup, it is populated with the sbecore, dbecore and WhizniumSBE Engine Monitor sources and libraries. For the case of cross-compilation for Embedded Linux applications, there can be multiple SDK folders on one development workstation.
 
-- the deployment folder ``${WHIZROOT}`` (in this reference installation to be found at ``/home/<username>/whiznium``) contains the binary results of Whiznium projects after build along with eventual XML preferences files. For cross-compilation scenarios, contents of this folder would need to be copied to the target Embedded Linux system.
+- the deployment folder ``${WHIZROOT}`` (in this reference installation to be found at ``/home/<username>/whiznium``) contains the binary results of Whiznium projects after build along with eventual XML preferences files. For cross-compilation scenarios, contents of this folder would need to be duplicated onto the target Embedded Linux system.
 
 ## Obtaining and setting up the folder structure
 
-- create directories ``/home/<username>/whiznium_dev``, ``/home/<username>/whiznium``, ``/home/<username>/whiznium_sdk``
+- create the directories ``/home/<username>/whiznium_dev``, ``/home/<username>/whiznium`` and ``/home/<username>/whiznium_sdk``
 
 - obtain the latest Whiznium package, available from aws s3
 ```
@@ -25,8 +25,8 @@ wget https://mpsitech-public.s3.eu-central-1.amazonaws.com/wznm_v1.1.3_wdbe_v1.1
 tar xzf wznm_v1.1.3_wdbe_v1.1.3.tgz
 ```
 
-- make manual modifications to these files as follows:
-	``init/ubuntu/init.sh``: replace username by actual username
+- make manual modifications to these files as follows:<br>
+	``init/ubuntu/init.sh``: replace username by actual username<br>
 	``tools/wdbp/PrefWdbp.xml``, ``tools/wdit/PrefWdit.xml``, ``tools/wzbp/PrefWzbp.xml``, ``tools/wzit/PrefWzit.xml``: replace ``${WHIZDEVROOT}`` by ``/home/<username>/whiznium_dev``
 
 - run basic setup; this script installs dependencies, sets up MariaDB for use with Whiznium and builds the Whiznium essentials, which comprise the sbecore and dbecore libraries along with the WhizniumSBE Engine Monitor project:
@@ -36,7 +36,7 @@ chmod 755 setup_base.sh
 ./setup_base.sh
 ```
 
-- when the MariaDB configuration file shows, make sure that in "Fine Tuning" section the following are present
+- when the MariaDB configuration file shows, make sure that in "Fine Tuning" section the following are present:
 ```
 max_connections = 1000000
 max_prepared_stmt_count = 1048576
@@ -52,9 +52,9 @@ sudo mariadb < ${WHIZDEVROOT}/rep/wzem/_ini/dbswzem_ubuntu/CreateDbsWzemMar.sql
 
 ## Test-running WhizniumSBE Engine Monitor
 
-This simple test serves as a quick validation for the setup, insuring that everything is in place.
+This simple test serves as a quick validation for the setup, ensuring that everything is in place.
 
-- edit the preferences XML file ``/home/<username>/whiznium/bin/wzemcmbd/PrefWzemcmbd.xml``:
+- edit the preferences XML file ``/home/<username>/whiznium/bin/wzemcmbd/PrefWzemcmbd.xml``:<br>
 	``<StgWzemAppsrv.port> = 14100``<br>
 	``<StgWzemDatabase.srefIxDbsVDbstype> = my``<br>
 	``<StgWzemDatabase.username> = <username>``<br>
@@ -67,12 +67,13 @@ cd /home/<username>/whiznium/bin/wzemcmbd
 Wzemcmbd >> clearAll
 ```
 
-- e.g. in Chrome, open http://127.0.0.1:14100 and log in with username/password: temp/asdf1234
+- e.g. in Chrome, open http://127.0.0.1:14100
 
 This screen should show up:
 
-<mark>...</mark>
+![](setup/Wzemcmbd.png)
 
+- log in with username/password: temp/asdf1234
 - in the menu _WhizniumSBE Engine Monitor_, choose _Load initialization data ..._
 - on the _Initialization file_ tab, pick _Choose file..._ and pick ``${WHIZDEVROOT}/rep/wzem/_ini/wzemcmbd/IexWzemIni.xml``; hit _Upload_
 - on the _Import_ tab, hit _Execute_
@@ -97,4 +98,4 @@ If this is the case, Congratulations! Your Whiznium development environment is s
 
 ---
 
-In case of problems, please do not hesitate to contact MPSI Technologles at (support@mpsitech.com)[mailto:support@mpsitech.com].
+In case of problems, please do not hesitate to contact MPSI Technologles at [support@mpsitech.com](mailto:support@mpsitech.com).
