@@ -27,7 +27,7 @@ source /opt/Xilinx/petalinux-v2020.1/settings.sh
 ```
 petalinux-create --type project --template zynq --name Arty-Z7-10
 cd Arty-Z7-10
-petalinux-config --get-hw-description ${WHIZDEVROOT}/setup/plnx/arty_wrp.sdk
+petalinux-config --get-hw-description ${WHIZDEVROOT}/setup/plnx
 ```
 
 - in Kconfig showing up change the file root file system to SD card, by following _Image Packaging Configuration_ -> _Root filesystem type_ and selecting _EXT4_. _Save_ and _Exit_.
