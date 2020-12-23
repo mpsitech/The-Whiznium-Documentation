@@ -30,7 +30,7 @@ cd Arty-Z7-10
 petalinux-config --get-hw-description ${WHIZDEVROOT}/setup/plnx
 ```
 
-- in Kconfig showing up change the file root file system to SD card, by following _Image Packaging Configuration_ -> _Root filesystem type_ and selecting _EXT4_. _Save_ and _Exit_.
+- in Kconfig showing up change the file root file system to SD card, by following _Image Packaging Configuration_ -> _Root filesystem type_ and selecting _EXT3_. _Save_ and _Exit_.
 
 To conform to the target board and to provide additional needed packages for Whiznium projects and Whiznium StarterKit in particular, it is required to overwrite ``project-spec/meta-user/recipes-bsp/device-tree/files/system-user.dtsi`` and 
 ``project-spec/meta-user/conf/user-rootfsconfig`` by the respective counterparts in ``${WHIZDEVROOT}/setup/plnx``.
@@ -101,12 +101,13 @@ These commands will generate a boot binary file and copy it - along with a u-boo
 ```
 petalinux-package --boot --force --format BIN --fsbl images/linux/zynq_fsbl.elf --fpga images/linux/system.bit --u-boot
 sudo cp images/linux/BOOT.BIN /mnt/emb_boot/
+sudo cp images/linux/boot.scr /mnt/emb_boot/
 sudo cp images/linux/image.ub /mnt/emb_boot/
 ```
 
 The Cora Z7 board does not come with an EEPROM to store its MAC address. Rather, the address can be found printed on a sticker on its backside. To make sure the board presents its correct MAC address to the network, it needs to be specified in the file ``${WHIZDEVROOT}/setup/plnx/uEnv.txt`` before being copied to the boot partition using
 ```
-sudo cp resources/uEnv.txt /mnt/emb_boot/
+sudo cp ${WHIZDEVROOT}/setup/plnx/uEnv.txt /mnt/emb_boot/
 ```
 
 ## Writing the root file system

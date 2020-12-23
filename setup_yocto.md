@@ -149,7 +149,7 @@ By selecting the target directory as ``/home/<username>/emb/tdx/wzsk/sdk``, the 
 
 ## Preparing an SD card
 
-The typical SD card setup for Embedded Linux consists of a small FAT32 boot partition and a larger ext4 partition for the root file system. The following procedure can be followed to this end:
+The typical SD card setup for Embedded Linux consists of a small FAT32 boot partition and a larger ext3 partition for the root file system. The following procedure can be followed to this end:
 
 - insert an empty SD card into your workstation, possibly using a USB adapter
 - find which block device the SD card is associated with using ``ls -l /dev/sd*``; in this example it is ``/dev/sdb``
