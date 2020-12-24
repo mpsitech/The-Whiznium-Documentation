@@ -86,7 +86,7 @@ cd /home/<username>/whiznium/bin/wznmopd2
 Wznmd >> showNodes
 ```
 
-- e.g. in Chrome, open http://127.0.0.1:13106
+- e.g. in Chrome, open https://127.0.0.1:13106
 
 This screen should show up:
 
@@ -119,7 +119,7 @@ Actually working with WhizniumSBE requires preparing an initialization file with
 
 The procedure is almost identical to the coresponding steps for WhizniumSBE. In below text, the differences are highlighted in <mark>yellow</mark>.
 
-## Building WhizniumSBE from source
+## Building WhizniumDBE from source
 
 - run WhizniumDBE (_wdbe_) setup:
 ```
@@ -197,7 +197,7 @@ cd /home/<username>/whiznium/bin/wdbeopd2
 Wdbed >> showNodes
 ```
 
-- e.g. in Chrome, open http://127.0.0.1:<mark>13105</mark>
+- e.g. in Chrome, open https://127.0.0.1:<mark>13105</mark>
 
 This screen should show up:
 
