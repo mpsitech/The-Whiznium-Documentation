@@ -72,13 +72,13 @@ Wznmd >> clearAll
 - in (2):
 ```
 cd /home/<username>/whiznium/bin/wznmopd1
-./Wznmopd
+./Wznmopd1
 ```
 
 - in (3):
 ```
 cd /home/<username>/whiznium/bin/wznmopd2
-./Wznmopd
+./Wznmopd2
 ```
 
 - in (1), verify connections:
@@ -183,13 +183,13 @@ Wdbed >> clearAll
 - in (2):
 ```
 cd /home/<username>/whiznium/bin/wdbeopd1
-./Wdbeopd
+./Wdbeopd1
 ```
 
 - in (3):
 ```
 cd /home/<username>/whiznium/bin/wdbeopd2
-./Wdbeopd
+./Wdbeopd2
 ```
 
 - in (1), verify connections:
