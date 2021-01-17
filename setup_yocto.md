@@ -14,7 +14,7 @@ A new SDK is added by adding a new _machine_ to the initialization file. For use
 
 - export the initialization file as tab-separated text ``${WHIZDEVROOT}/projects/wznm/ini/IexWznmIni.txt``
 
-- re-run the WhizniumSBE Bootstrap procedure described in the [WhizniumSBE Development Workflow](./README.md) document
+- re-run the WhizniumSBE Bootstrap procedure described in the [WhizniumSBE Development Workflow](./sbe.md) document
 
 - log into WhizniumSBE as any user
 - in the menu _Navigation_, choose _Machines ..._
