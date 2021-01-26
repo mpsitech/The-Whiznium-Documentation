@@ -20,6 +20,8 @@ Note: you are free to use this documentation offline by cloning it and use e.g. 
 
 [Setting Up The Whiznium StarterKit Project](./wzsk.md)
 
+[WhizniumSBE-Backed Project Source Code Organization](./sbeincl.md)
+
 [WhizniumSBE Model Files](./sbemdl.md)
 
 [WhizniumSBE Glossary Of Terms](./sbegloss.md)
@@ -31,6 +33,8 @@ Note: you are free to use this documentation offline by cloning it and use e.g. 
 [WhizniumDBE Development Workflow](./dbe.md)
 
 <!-- [Setting Up The Whiznium StarterKit Device Project](./wskd.md) -->
+
+[WhizniumDBE-Backed Project Source Code Organization](./dbeincl.md)
 
 [WhizniumDBE Model Files](./dbemdl.md)
 

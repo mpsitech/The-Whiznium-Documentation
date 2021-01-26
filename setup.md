@@ -6,7 +6,9 @@ The following instructions have been tested on a Linux workstation running ubunt
 
 ## Overview
 
-To ensure maximum flexibility for both single-user and shared development environments - along with the possibility to have one dedicated SDK for each project (a very common situation for Yocto Embedded Linux software development) - the Whiznium development environment spans across three folders:
+To ensure maximum flexibility for both single-user and shared development environments - along with the possibility to have one dedicated SDK for each project (a very common situation for Yocto Embedded Linux software development) - the Whiznium development environment spans across three directories as represented below:
+
+![](setup/folders.png)
 
 - the development folder ``${WHIZDEVROOT}`` (in this reference installation to be found at ``/home/<username>/whiznium_dev``) contains information and the source code for all projects under developent using Whiznium. Also included are the WhizniumSBE/DBE Bootstrap and Iterator Java tools. The development folder is well-suited for being a shared network drive.
 
@@ -21,8 +23,8 @@ To ensure maximum flexibility for both single-user and shared development enviro
 - obtain the latest Whiznium package, available from aws s3
 ```
 cd /home/<username>/whiznium_dev
-wget https://mpsitech-public.s3.eu-central-1.amazonaws.com/wznm_v1.1.3_wdbe_v1.1.3.tgz
-tar xzf wznm_v1.1.3_wdbe_v1.1.3.tgz
+wget https://content.mpsitech.cloud/wznm_v1.1.4_wdbe_v1.1.4.tgz
+tar xzf wznm_v1.1.4_wdbe_v1.1.4.tgz
 ```
 
 - make manual modifications to these files as follows:<br>

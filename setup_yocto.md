@@ -12,7 +12,7 @@ A new SDK is added by adding a new _machine_ to the initialization file. For use
 
 - in the section ``// IP machines --- BEGIN/END``, only for the ``any;ubuntu;default``, ``any;yocto;armv7;plnx;ubuntu_plnx_wzsk`` and ``any;yocto;armv7;tdx;ubuntu_tdx_wzsk`` machines, replace ``username`` in the paths by your user name
 
-- export the initialization file as tab-separated text ``${WHIZDEVROOT}/projects/wznm/ini/IexWznmIni.txt``
+- save the initialization file as tab-separated text ``${WHIZDEVROOT}/projects/wznm/ini/IexWznmIni.txt``
 
 - re-run the WhizniumSBE Bootstrap procedure described in the [WhizniumSBE Development Workflow](./sbe.md) document
 
