@@ -23,8 +23,8 @@ To ensure maximum flexibility for both single-user and shared development enviro
 - obtain the latest Whiznium package, available from aws s3
 ```
 cd /home/<username>/whiznium_dev
-wget https://content.mpsitech.cloud/wznm_v1.1.4_wdbe_v1.1.4.tgz
-tar xzf wznm_v1.1.4_wdbe_v1.1.4.tgz
+wget https://content.mpsitech.cloud/wznm_v1.1.5_wdbe_v1.1.5.tgz
+tar xzf wznm_v1.1.5_wdbe_v1.1.5.tgz
 ```
 
 - make manual modifications to these files as follows:<br>
