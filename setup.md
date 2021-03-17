@@ -18,7 +18,7 @@ To ensure maximum flexibility for both single-user and shared development enviro
 
 ## Obtaining and setting up the folder structure
 
-- create the directories ``/home/<username>/whiznium_dev``, ``/home/<username>/whiznium`` and ``/home/<username>/whiznium_sdk``
+- create the directories ``/home/<username>/whiznium_dev``, ``/home/<username>/whiznium`` and ``/home/<username>/whiznium_sdk`` or whichever combination of ``${WHIZDEVROOT}``, ``${WHIZSDKROOT}`` and ``${WHIZROOT}`` have been chosen
 
 - obtain the latest Whiznium package, available from aws s3
 ```
@@ -27,11 +27,9 @@ wget https://content.mpsitech.cloud/wznm_v1.1.5_wdbe_v1.1.5.tgz
 tar xzf wznm_v1.1.5_wdbe_v1.1.5.tgz
 ```
 
-- make manual modifications to these files as follows:<br>
-	``init/ubuntu/init.sh``: replace username by actual username<br>
-	``tools/wdbp/PrefWdbp.xml``, ``tools/wdit/PrefWdit.xml``, ``tools/wzbp/PrefWzbp.xml``, ``tools/wzit/PrefWzit.xml``: replace ``${WHIZDEVROOT}`` by ``/home/<username>/whiznium_dev``
+- in ``init/ubuntu/init.sh``, adapt the path variables; for the reference installation, only replace ``username`` by the actual username
 
-- run basic setup; this script installs dependencies, sets up MariaDB for use with Whiznium and builds the Whiznium essentials, which comprise the sbecore and dbecore libraries along with the WhizniumSBE Engine Monitor project:
+- run basic setup; this script prompts the path to the Whiznium initialization script edited in the previous step and subsequently installs dependencies, sets up MariaDB for use with Whiznium and builds the Whiznium essentials. The latter comprise the sbecore and dbecore libraries along with the WhizniumSBE Engine Monitor project:
 ```
 cd setup/base
 chmod 755 setup_base.sh
@@ -46,21 +44,11 @@ max_prepared_stmt_count = 1048576
 
 - leave nano via ``Ctrl+O``, ``<Enter>``, ``Ctrl+X``
 
-- [optional] edit WhizniumSBE Engine Monitor (_wzem_) database to deviate from default user (look for ``CREATE USER`` and ``GRANT`` lines):
-```
-nano ${WHIZDEVROOT}/rep/wzem/_ini/dbswzem_ubuntu/CreateDbsWzemMar.sql
-sudo mariadb < ${WHIZDEVROOT}/rep/wzem/_ini/dbswzem_ubuntu/CreateDbsWzemMar.sql
-```
+- when prompted for identification towards MariaDB, it is possible to adapt the default user name and password, relevant for pre-existing MariaDB installations
 
 ## Test-running WhizniumSBE Engine Monitor
 
 This simple test serves as a quick validation for the setup, ensuring that everything is in place.
-
-- edit the preferences XML file ``/home/<username>/whiznium/bin/wzemcmbd/PrefWzemcmbd.xml``:<br>
-	``<StgWzemAppsrv.port> = 14100``<br>
-	``<StgWzemDatabase.srefIxDbsVDbstype> = my``<br>
-	``<StgWzemDatabase.username> = <username>``<br>
-	replace all ``${WHIZROOT}`` by ``/home/<username>/whiznium``
 
 - run the application from command line
 ```

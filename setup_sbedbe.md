@@ -2,7 +2,7 @@
 
 # Setting Up WhizniumSBE On Your Workstation
 
-The following instructions have been tested on a Linux workstation running ubuntu 20.04.
+The following instructions have been tested on a Linux workstation running ubuntu 20.04. It is assumed that for ``${WHIZDEVROOT}``, ``${WHIZSDKROOT}`` and ``${WHIZROOT}``, ``/home/<username>/whiznium_dev``, ``/home/<username>/whiznium`` and ``/home/<username>/whiznium_sdk``, respectively, have been chosen.
 
 Note: for now it is required to have a local Whizniun installation as obtained by the following instructions. In future, _Whiznium as a Service_, the cloud-based Whiznium solution provided by MPSI Technologies can substitute as a convenient alternative. This solution has the advantage of automatically coming with the latest Whiznium updates.
 
@@ -15,11 +15,7 @@ chmod 755 setup_wznm.sh
 ./setup_wznm.sh
 ```
 
-- [optional] edit WhizniumSBE (wznm) database to deviate from default user (look for ``CREATE USER`` and ``GRANT`` lines):
-```
-nano ${WHIZDEVROOT}/rep/wznm/_ini/dbswznm_ubuntu/CreateDbsWznmMar.sql
-sudo mariadb < ${WHIZDEVROOT}/rep/wznm/_ini/dbswznm_ubuntu/CreateDbsWznmMar.sql
-```
+- when prompted for identification towards MariaDB, it is possible to adapt the default user name and password, relevant for pre-existing MariaDB installations
 
 - generate a key and self-signed certificate to allow HTTPS:
 ```
@@ -34,31 +30,6 @@ Note that clients will get confused when different applications (such as Whizniu
 WhizniumSBE is a WhizniumSBE project and as such can leverage WhizniumSBE's out-of-the-box feature of distributed computing. The runtime setup consists of the database, one _main engine_ the clients talk to and two _operation engines_ which perform atomic compute operations, e.g. composing single source code files. This scenario is depicted below:
 
 ![](setup_sbedbe/Wznmd_Wznmopd.png)
-
-To prepare WhizniumSBE for this configuration, perform the following steps:
-
-- edit ``/home/<username>/whiznium/bin/wznmd/PrefWznmd.xml``:<br>
-	``StgWznmAppsrv.port = 13106``<br>
-	``StgWznmAppsrv.https = true``<br>
-	``StgWznmd.opengsrvport = 13126``<br>
-	``StgWznmDatabase.srefIxDbsVDbstype = my``<br>
-	``StgWznmDatabase.username = <username>``<br>
-	replace all ``${WHIZROOT}`` by ``/home/<username>/whiznium``<br>
-	``StgWznmTenant.orgname = <your organization>``<br>
-	``StgWznmTenant.orgweb = <your webpage incl. http://>``<br>
-- edit ``/home/<username>/whiznium/bin/wznmopd1/PrefWznmopd.xml``:
-	``StgWznmDatabase.srefIxDbsVDbstype = my``<br>
-	``StgWznmDatabase.username = <username>``<br>
-	``StgWznmopd.engport = 13126``<br>
-	``StgWznmopd.engsrvportbase = 13146``<br>
-	replace all ``${WHIZROOT}`` by ``/home/<username>/whiznium``
-- edit ``/home/<username>/whiznium/bin/wznmopd2/PrefWznmopd.xml``:
-	``StgWznmDatabase.srefIxDbsVDbstype = my``<br>
-	``StgWznmDatabase.username = <username>``<br>
-	``StgWznmopd.engport = 13126``<br>
-	``StgWznmopd.engsrvportbase = 13146``<br>
-	``StgWznmopd.engsrvofs = 4``<br>
-	replace all ``${WHIZROOT}`` by ``/home/<username>/whiznium``
 
 To run WhizniumSBE, open three terminals (1), (2) and (3) and run, respectively:
 
@@ -117,7 +88,7 @@ Actually working with WhizniumSBE requires preparing an initialization file with
 
 # Setting Up WhizniumDBE On Your Workstation
 
-The procedure is almost identical to the coresponding steps for WhizniumSBE. In below text, the differences are highlighted in <mark>yellow</mark>.
+The procedure is almost identical to the coresponding steps for WhizniumSBE.
 
 ## Building WhizniumDBE from source
 
@@ -128,11 +99,7 @@ chmod 755 setup_wdbe.sh
 ./setup_wdbe.sh
 ```
 
-- [optional] edit WhizniumDBE (wdbe) database to deviate from default user (look for ``CREATE USER`` and ``GRANT`` lines):
-```
-nano ${WHIZDEVROOT}/rep/wdbe/_ini/dbswdbe_ubuntu/CreateDbsWdbeMar.sql
-sudo mariadb < ${WHIZDEVROOT}/rep/wdbe/_ini/dbswdbe_ubuntu/CreateDbsWdbeMar.sql
-```
+- when prompted for identification towards MariaDB, it is possible to adapt the default user name and password, relevant for pre-existing MariaDB installations
 
 - copy certificate and key files from the WhizniumSBE engine's folder:
 ```
@@ -145,31 +112,6 @@ cp ../wznmd/server.* .
 The WhizniumDBE runtime configuration, in analogy to WhizniumSBE is depicted below:
 
 ![](setup_sbedbe/Wdbed_Wdbeopd.png)
-
-To prepare WhizniumDBE for this configuration, perform the following steps:
-
-- edit ``/home/<username>/whiznium/bin/wdbed/PrefWdbed.xml``:<br>
-	``StgWdbeAppsrv.port = ``<mark>``13105``</mark><br>
-	``StgWdbeAppsrv.https = true``<br>
-	``StgWdbed.opengsrvport = ``<mark>``13125``</mark><br>
-	``StgWdbeDatabase.srefIxDbsVDbstype = my``<br>
-	``StgWdbeDatabase.username = <username>``<br>
-	replace all ``${WHIZROOT}`` by ``/home/<username>/whiznium``<br>
-	``StgWdbeTenant.orgname = <your organization>``<br>
-	``StgWdbeTenant.orgweb = <your webpage incl. http://>``<br>
-- edit ``/home/<username>/whiznium/bin/wdbeopd1/PrefWdbeopd.xml:``<br>
-	``StgWdbeDatabase.srefIxDbsVDbstype = my``<br>
-	``StgWdbeDatabase.username = <username>``<br>
-	``StgWdbeopd.engport = ``<mark>``13125``</mark><br>
-	``StgWdbeopd.engsrvportbase = ``<mark>``13145``</mark><br>
-	replace all ``${WHIZROOT}`` by ``/home/<username>/whiznium``<br>
-- edit ``/home/<username>/whiznium/bin/wdbeopd2/PrefWdbeopd.xml``:<br>
-	``StgWdbeDatabase.srefIxDbsVDbstype = my``<br>
-	``StgWdbeDatabase.username = <username>``<br>
-	``StgWdbeopd.engport = ``<mark>``13125``</mark><br>
-	``StgWdbeopd.engsrvportbase = ``<mark>``13145``</mark><br>
-	``StgWdbeopd.engsrvofs = 4``<br>
-	replace all ``${WHIZROOT}`` by ``/home/<username>/whiznium``
 
 To run WhizniumDBE, open three terminals (1), (2) and (3) and run, respectively:
 
@@ -197,7 +139,7 @@ cd /home/<username>/whiznium/bin/wdbeopd2
 Wdbed >> showNodes
 ```
 
-- e.g. in Chrome, open https://127.0.0.1:<mark>13105</mark>
+- e.g. in Chrome, open https://127.0.0.1:13105
 
 This screen should show up:
 

@@ -133,11 +133,7 @@ sudo umount /mnt/emb_rootfs
 
 ## Building the Whiznium specifics
 
-Please follow the instructions provided in the same section of [Setting Up A New Yocto SDK For Use With Whiznium](./setup_yocto.md) - with the difference that now the first two lines in ``${WHIZDEVROOT}/setup/base/setup_base_yocto.sh`` should read
-```
-export set INITPATH=/home/<username>/whiznium_dev/init/ubuntu_plnx_wzsk
-export set MCHPOSTFIX=_plnx
-```
+Please follow the instructions provided in the same section of [Setting Up A New Yocto SDK For Use With Whiznium](./setup_yocto.md) - with the differences that now the path to the initialization script folder becomes ``/home/<username>/whiznium_dev/init/ubuntu_plnx_wzsk`` and the machine postfix becomes ``_plnx```.
 
 ## Bulk-copying the Whiznium folder to the SD card
 

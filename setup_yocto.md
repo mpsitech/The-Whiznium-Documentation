@@ -8,9 +8,9 @@ The following instructions have been tested on a Linux workstation running ubunt
 
 All WhizniumSBE/DBE-generated Makefiles make use of environment variables to facilitate placing SDK's anywhere in the file system. By making changes to the WhizniumSBE initialization file at ``${WHIZDEVROOT}/projects/wznm/ini/IexWznmIni.xlsx``, WhizniumSBE gets all information it needs to writing out scripts containing these environment variables.
 
-A new SDK is added by adding a new _machine_ to the initialization file. For use with the Whiznium StarterKit project, both with Toradex/Yocto and Xilinx/PetaLinux SDK's, two machines are already pre-configured, which provide the correct pathes with minor adaptations:
+A new SDK is added by adding a new _machine_ to the initialization file. For use with the Whiznium StarterKit project, with Toradex/Yocto, Xilinx/PetaLinux and Microchip/Yocto SDK's, three machines are already pre-configured, which provide the correct paths with minor adaptations:
 
-- in the section ``// IP machines --- BEGIN/END``, only for the ``any;ubuntu;default``, ``any;yocto;armv7;plnx;ubuntu_plnx_wzsk`` and ``any;yocto;armv7;tdx;ubuntu_tdx_wzsk`` machines, replace ``username`` in the paths by your user name
+- in the section ``// IP machines --- BEGIN/END``, only for the ``any;ubuntu;default``, ``any;yocto;armv7;plnx;ubuntu_plnx_wzsk``, ``any;yocto;armv7;tdx;ubuntu_tdx_wzsk`` and ``any;yocto;riscv64;ubuntu_riscv64_wzsk`` machines, replace ``username`` in the paths by your user name
 
 - save the initialization file as tab-separated text ``${WHIZDEVROOT}/projects/wznm/ini/IexWznmIni.txt``
 
@@ -18,11 +18,11 @@ A new SDK is added by adding a new _machine_ to the initialization file. For use
 
 - log into WhizniumSBE as any user
 - in the menu _Navigation_, choose _Machines ..._
-- for both ``ubuntu_plnx_wzsk`` and ``ubuntu_tdx_wzsk`` machines, select them in the list view
+- for the ``ubuntu_plnx_wzsk``, ``ubuntu_riscv64_wzsk`` and ``ubuntu_tdx_wzsk`` machines, select them in the list view
 - in the _Machine_ menu, choose _Write initialization scripts ..._
 - on the _Writing_ tab, hit _Execute_
 - on the _File archive_ tab, hit _Download_
-- unpack the downloaded archives into ``${WHIZDEVROOT}/init/ubuntu_plnx_wzsk`` and ``ubuntu_tdx_wzsk``, respectively
+- unpack the downloaded archives into ``${WHIZDEVROOT}/init/ubuntu_plnx_wzsk``, ``ubuntu_riscv64_wzsk`` and ``ubuntu_tdx_wzsk``, respectively
 
 ## Installing prerequisites
 
@@ -211,13 +211,7 @@ sudo umount /mnt/emb_rootfs
 
 Setting up Whiznium within a newly-built SDK is mostly equivalent to the procedure for the workstation as described in [Setting Up Whiznium On Your Workstation](./setup.md), section "Obtaining and setting up the folder structure". The key difference is that now, cross-compilation instead of native compilation takes place. The build results again comprise the sbecore and dbecore libraries along with the WhizniumSBE Engine Monitor project.
 
-A single script, ``${WHIZDEVROOT}/setup/base/setup_base_yocto.sh`` performs the required actions for both reference targets currently supported, Embedded Linux (Toradex Apalis i.MX6) and FPGA (Digilent Arty Zynq).
-
-Edit the first two lines of ``${WHIZDEVROOT}/setup/base/setup_base_yocto.sh`` to read
-```
-export set INITPATH=/home/<username>/whiznium_dev/init/ubuntu_tdx_wzsk
-export set MCHPOSTFIX=_tdx
-```
+A single script, ``${WHIZDEVROOT}/setup/base/setup_base_yocto.sh`` performs the required actions for all three reference targets currently supported, Embedded Linux (Toradex Apalis i.MX6 / _tdx), FPGA (Digilent Arty Zynq / _plnx) and RISC-V (Microchip Icicle PolarFire SoC / _riscv).
 
 The setup script can now be executed using:
 ```
@@ -225,6 +219,8 @@ cd ${WHIZDEVROOT}/setup/base
 chmod 755 setup_base_yocto.sh
 ./setup_base_yocto.sh
 ```
+
+When prompted for the path to the initialization script folder and for the machine postfix, keep the defaults.
 
 ## Bulk-copying the Whiznium folder to the SD card
 
