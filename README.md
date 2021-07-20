@@ -12,6 +12,8 @@ Note: you are free to use this documentation offline by cloning it and use e.g. 
 
 [Setting Up A New PetaLinux SDK For Use With Whiznium](./setup_peta.md)
 
+[Setting Up A New PolarFire SoC Yocto SDK For Use With Whiznium](./setup_riscv.md)
+
 <!-- [Working With Cloud-based Whiznium (WaaS)](./whiz_cloud.md) -->
 
 ## WhizniumSBE topics
@@ -32,7 +34,9 @@ Note: you are free to use this documentation offline by cloning it and use e.g. 
 
 [WhizniumDBE Development Workflow](./dbe.md)
 
-<!-- [Setting Up The Whiznium StarterKit Device Project](./wskd.md) -->
+[Running The Vivado Design Flow For Whiznium StarterKit Device](./wskd_vivado.md)
+
+[Running The Libero SoC Design Flow For Whiznium StarterKit Device](./wskd_libero.md)
 
 [WhizniumDBE-Backed Project Source Code Organization](./dbeincl.md)
 

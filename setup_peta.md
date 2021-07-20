@@ -139,6 +139,7 @@ Please follow the instructions provided in the same section of [Setting Up A New
 
 While later during development there are multiple options of downloading executables to the target, it is advisible to perform the initial fill by a direct copy operation to the SD card. The required commands are:
 ```
+source ${WHIZDEVROOT}/init/ubuntu_plnx_wzsk/init.sh
 sudo mount /dev/sdb2 /mnt/emb_rootfs
 cp ${WHIZDEVROOT}/setup/plnx/init.sh ${SYSROOT}/home/root
 cd ${SYSROOT}/home/root

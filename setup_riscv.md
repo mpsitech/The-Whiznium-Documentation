@@ -1,6 +1,6 @@
 [back](./README.md)
 
-# Setting Up A New Yocto SDK For Use With Whiznium
+# Setting Up A New PolarFire SoC Yocto SDK For Use With Whiznium
 
 The following instructions have been tested on a Linux workstation running ubuntu 20.04.
 
