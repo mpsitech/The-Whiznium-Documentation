@@ -76,7 +76,7 @@ cp -r ${WHIZDEVROOT}/setup/tdx/meta-mpsi/recipes-kernel meta-mpsi/
 cd ..
 ```
 
-- add the new layer by including ``${TOPDIR}/../layers/meta-mpsi \`` at the end of the file ``oe-core/build/conf/bblayers.conf``
+- add the new layer by including ``${TOPDIR}/../layers/meta-mpsi \`` at the end of the file ``build/conf/bblayers.conf``
 
 - run the first complete image build
 ```
