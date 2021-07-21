@@ -40,7 +40,7 @@ make BOARD=mpfs-icicle-kit-es
 
 ### Freeing pins on the RaspberryPi header
 
-In the reference design, some needed RaspberryPi header pins are occupied by an SPI interface connected to the MSS. In addition some pins are multiplexed with the Mikrobus header where QSPI functionality is implemented by default. There are two options to remove this unwanted functionality.
+In the reference design, some needed RaspberryPi header pins are occupied by an SPI interface connected to the MSS. In addition some pins are multiplexed with the Mikrobus header where QSPI functionality is implemented by default. While one option is to remove the corresponding output nets and pins and ground the input pins to the MSS, a cleaner way is to modify the MSS.
 
 Update the MSS configuration as follows:
 
