@@ -149,7 +149,7 @@ A number of jumper settings should be established / verified before power-on of 
 With the FlashPro5 programmer connected to the workstation via USB, and the target powered on, FPExpress can be run for programming:
 
 - select "Job Projects" -> "New..." and insert the path to the file generated above in the "Import FlashPro Express job file" text field
-- to avoid confucion, the "FlashPro Express job project location" should be the same as the job file's location; click "OK" to close the dialog
+- to avoid confusion, the "FlashPro Express job project location" should be the same as the job file's location; click "OK" to close the dialog
 - click "RUN"; programming should take about 1-2 minutes to complete
 
 If the system is now power-cycled - with the Yocto SD card inserted - it should properly boot up Embedded Linux with FPGA support through a character device driver (see [Setting Up A New PolarFire SoC Yocto SDK For Use With Whiznium](./setup_riscv.md)).

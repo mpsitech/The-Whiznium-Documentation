@@ -134,7 +134,7 @@ sudo umount /mnt/emb_rootfs
 
 ## Building the Whiznium specifics
 
-Please follow the instructions provided in the same section of [Setting Up A New Yocto SDK For Use With Whiznium](./setup_yocto.md) - with the differences that now the path to the initialization script folder becomes ``/home/<username>/whiznium_dev/init/ubuntu_riscv64_wzsk`` and the machine postfix becomes ``_riscv```.
+Please follow the instructions provided in the same section of [Setting Up A New Yocto SDK For Use With Whiznium](./setup_yocto.md) - with the differences that now the path to the initialization script folder becomes ``/home/<username>/whiznium_dev/init/ubuntu_riscv64_wzsk`` and the machine postfix becomes ``_riscv``.
 
 ## Bulk-copying the Whiznium folder to the SD card
 
