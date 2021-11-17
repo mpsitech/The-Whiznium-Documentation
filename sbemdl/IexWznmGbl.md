@@ -70,7 +70,9 @@ irefRefWznmCAMBlockItem (ubigint)|integer reference to items cluster|
 srefIxVBasetype (string)|type<br>var: standard variable<br>conpar: control parameter<br>contit: control title<br>feed: feed<br>rst: record set of query table<br>sub: sub-block|
 sref (string)|identifier|
 srefIxWznmVVartype (string)|variable data type<br>void: not applicable<br>boolean: boolean<br>tinyint: integer / byte (8bit)<br>utinyint: unsigned integer / byte (8bit)<br>smallint: integer (16bit)<br>usmallint: unsigned integer (16bit)<br>int: integer (32bit)<br>uint: unsigned integer (32bit)<br>bigint: integer (64bit)<br>ubigint: unsigned integer (64bit)<br>float: float<br>double: double<br>string: string<br>booleanvec: boolean vector<br>utinyintvec: unsigned int / byte 8bit vector<br>usmallintvec: unsigned int 16bit vector<br>intvec: integer 32bit vector<br>uintvec: unsigned int 32bit vector<br>ubigintvec: unsigned int 64bit vector<br>floatvec: float vector<br>doublevec: double vector<br>floatmat: float matrix<br>doublemat: double matrix<br>stringvec: string vector<br>vecsref: vector entry string reference<br>scrref: scrambled reference|
+srefRefWznmMVector (string)|vecsref data type: vector|
 Defval (string)|default value|
+srefRefWznmMVectoritem (string)|vecsref variable data type - default vector item|
 Comment (string)|comment|
 
 [//]: # (IP ImeIAMBlockItem.columns - END)
@@ -91,6 +93,7 @@ Column|Content|
 -|-|
 srefX1RefWznmMRelease (string)|release|
 Defval (string)|default value|
+srefRefWznmMVectoritem (string)|default vector item|
 
 [//]: # (IP ImeIJAMBlockItem.columns - END)
 
@@ -266,4 +269,4 @@ Comment (string)|comment|
 
 [//]: # (IP ImeIJMVectoritem.columns - END)
 
-<small>Markdown for WhizniumSBE v1.1.3 auto-generated (what else ;-) ) by WhizniumSBE on 1 Jan 2021</small>
+<small>Markdown for WhizniumSBE v1.1.7 auto-generated (what else ;-) ) by WhizniumSBE on 14 Nov 2021</small>

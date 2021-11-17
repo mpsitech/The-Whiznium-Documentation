@@ -15,12 +15,12 @@ Structure
 
 [//]: # (IP structure - BEGIN)
 
-&nbsp;&nbsp;&nbsp;&nbsp;\+ Project [``[ImeIMProject]``](#1-Project-ImeIMProject)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ Version [``[ImeIMVersion]``](#11-Version-ImeIMVersion)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- About by locale [``[ImeIJMVersion]``](#111-About-by-locale-ImeIJMVersion)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- State history [``[ImeIJMVersionState]``](#112-State-history-ImeIJMVersionState)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Locales [``[ImeIRMLocaleMVersion]``](#113-TblWznmRMLocaleMVersion-ImeIRMLocaleMVersion)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Contributing persons [``[ImeIRMPersonMProject]``](#12-Contributing-persons-ImeIRMPersonMProject)
+&nbsp;&nbsp;&nbsp;&nbsp;\+ Project [``[ImeIMProject]``](#1-project-imeimproject)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ Version [``[ImeIMVersion]``](#11-version-imeimversion)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- About by locale [``[ImeIJMVersion]``](#111-about-by-locale-imeijmversion)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- State history [``[ImeIJMVersionState]``](#112-state-history-imeijmversionstate)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Locales [``[ImeIRMLocaleMVersion]``](#113-locales-imeirmlocalemversion)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Contributing persons [``[ImeIRMPersonMProject]``](#12-contributing-persons-imeirmpersonmproject)
 
 [//]: # (IP structure - END)
 
@@ -91,7 +91,6 @@ srefX1RefWznmMLocale (string)|locale|
 About1 (string)|about text, part 1|
 About2 (string)|about text, part 2|
 About3 (string)|about text, part 3|
-Comment (string)|comment|
 
 [//]: # (IP ImeIJMVersion.columns - END)
 

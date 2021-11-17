@@ -15,11 +15,11 @@ Structure
 
 [//]: # (IP structure - BEGIN)
 
-&nbsp;&nbsp;&nbsp;&nbsp;\+ Import/export complex [``[ImeIMImpexpcplx]``](#1-Importexport-complex-ImeIMImpexpcplx)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Name by locale [``[ImeIJMImpexpcplxTitle]``](#11-Name-by-locale-ImeIJMImpexpcplxTitle)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ Import/export [``[ImeIMImpexp]``](#12-Importexport-ImeIMImpexp)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ Import/export column [``[ImeIMImpexpcol]``](#121-Importexport-column-ImeIMImpexpcol)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Stub by vector item [``[ImeIJMImpexpcolStub]``](#1211-Stub-by-vector-item-ImeIJMImpexpcolStub)
+&nbsp;&nbsp;&nbsp;&nbsp;\+ Import/export complex [``[ImeIMImpexpcplx]``](#1-importexport-complex-imeimimpexpcplx)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Name by locale [``[ImeIJMImpexpcplxTitle]``](#11-name-by-locale-imeijmimpexpcplxtitle)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ Import/export [``[ImeIMImpexp]``](#12-importexport-imeimimpexp)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ Import/export column [``[ImeIMImpexpcol]``](#121-importexport-column-imeimimpexpcol)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Stub by vector item [``[ImeIJMImpexpcolStub]``](#1211-stub-by-vector-item-imeijmimpexpcolstub)
 
 [//]: # (IP structure - END)
 

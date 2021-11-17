@@ -12,6 +12,14 @@ Below, the structure of the WhizniumDBE relational master database can be found,
 
 ![](dbedb/wdbe-project-management.jpg)
 
-## Device description
+## Modular structure
 
-![](dbedb/wdbe-device-description.jpg)
+![](dbedb/wdbe-modular-structure.jpg)
+
+## High-level features
+
+![](dbedb/wdbe-high-level-features.jpg)
+
+## Fine structure
+
+![](dbedb/wdbe-fine-structure.jpg)

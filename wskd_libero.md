@@ -4,7 +4,9 @@
 
 This document uses Microchip's PolarFire SoC Icicle kit in terms of hardware.
 
-The following instructions rely on a number of software tools. The tested configuration is:
+The following instructions require the finalized Whiznium StarterKit Device Libero SoC IP. The corresponding project can be downloaded, or else can be created from scratch as described [here](./wskdip_libero.md).
+
+The design flow relies on a number of software tools. The tested configuration is:
 
 - (optional) the [RISC-V GNU compiler toolchain](https://github.com/riscv/riscv-gnu-toolchain), specifically the Newlib 64bit version, for cross-compilation of the Hart Software Services (HSS) bare-metal code to be deployed on the E51 monitor core. Installed on a Linux workstation running ubuntu 20.04
 - (optional) Microchip's [PolarFire SoC MSS Configurator](https://www.microsemi.com/product-directory/soc-design-tools/5587-pfsoc-mss-configurator-tool#downloads) v2021.1, to be able to adapt the reference Microprocessor Subsystem (MSS), defining re-configurable wiring between RISC-V cores and board features / FPGA fabric. Installed on a workstation running Windows 10
@@ -17,9 +19,9 @@ The setup procedure in Libero SoC mainly consists of running .tcl scripts descri
 
 - download the repositories current release (here, 2021.04) from [GitHub](https://github.com/polarfire-soc/icicle-kit-reference-design/releases/tag/2021.04) and extract the archive content into a folder, e.g. ``C:\Users\mpsitech\fpgacode\icicle\wskd``
 
-- in Libero SoC, press Ctrl+U and select the script file ``ICICLE_KIT_SD_CARD.tcl``, then click "Run"
+- in Libero SoC, press Ctrl+U and select the script file ``ICICLE_KIT_SD_CARD.tcl``, then click __Run__
 
-- once completed, navigate to the "Design Flow" tab and make sure "Synthesize", "Place and Route" and "Generate FPGA Array Data" execute (by double-clicking on the respective items) without errors
+- once completed, navigate to the __Design Flow__ tab and make sure __Synthesize__, __Place and Route__ and __Generate FPGA Array Data__ execute (by double-clicking on the respective items) without errors
 
 ## Building the HSS bare-metal project from source
 
@@ -45,8 +47,8 @@ In the reference design, some needed RaspberryPi header pins are occupied by an 
 Update the MSS configuration as follows:
 
 - start PolarFire SoC MSS Configurator and open the file ``script_support\PF_SoC_MSS_Icicle_SD.cfg``
-- in the tab "Peripherals", select QSPI and SPI_0, setting both to "Unused"
-- save the configuration and click on "Generate", placing the result in a new folder ``script_support\components\MSS_SD_wskd``
+- in the tab __Peripherals__, select QSPI and SPI_0, setting both to "Unused"
+- save the configuration and click on __Generate__, placing the result in a new folder ``script_support\components\MSS_SD_wskd``
 - close PolarFire SoC MSS Configurator
 
 Incorporate the MSS/wiring changes into the scripts ``script_support\components\MPFS_ICICLE_BASE_DESIGN.tcl`` and ``script_support\simulation\Test_bench.tcl``:
@@ -65,11 +67,11 @@ Remove the folder ``MPFS_ICICLE_SD_CARD`` and adapt to the new setup by re-runni
 
 These changes can be performed graphically on the SmartDesign canvas.
 
-Helped by the option "Filter Nets" with "RPi_GPIO*" filter, identify, then delete the eight nets and pins RPi_GPIO5, 6, 12, 13, 19 .. 21.
+Helped by the option __Filter Nets__ with "RPi_GPIO*" filter, identify, then delete the eight nets and pins RPi_GPIO5, 6, 12, 13, 19 .. 21.
 
 The user LED's with schematic names LED1 .. LED4 are freed by deleting the nets and pins LED0 .. LED3, removing the connection to the respective MSS outputs.
 
-The Whiznium StarterKit Device design requires two switches, push-buttons actually, for which SWITCH2 and SWITCH3 need to be freed from their default functionality. This is achieved by deleting the OR-gates SW2_OR_GPIO_2_26 and SW3_OR_GPIO_2_27 first, and establishing direct links GPIO_2_M2F_26 - GPIO_2_F2M_30 and GPIO_2_M2F_27 - GPIO_2_F2M_31, e.g. using "QuickConnect", respectively.
+The Whiznium StarterKit Device design requires two switches, push-buttons actually, for which SWITCH2 and SWITCH3 need to be freed from their default functionality. This is achieved by deleting the OR-gates SW2_OR_GPIO_2_26 and SW3_OR_GPIO_2_27 first, and establishing direct links GPIO_2_M2F_26 - GPIO_2_F2M_30 and GPIO_2_M2F_27 - GPIO_2_F2M_31, e.g. using __QuickConnect__, respectively.
 
 Lastly, pins SW2 and SW3 can be deleted.
 
@@ -77,15 +79,15 @@ Lastly, pins SW2 and SW3 can be deleted.
 
 To communicate between Embedded Linux applications and the Whiznium StarterKit Device logic in the FPGA fabric, a 32bit AXI4 lite slave is used, which is added at a suitable address to the existing FIC0_MASTER block.
 
-- in the MPFS_ICICLE_KIT_BASE_DESIGN SmartDesign, double-click on FIC0_MASTER and increase the "Number of Slaves" from 3 to 4
+- in the MPFS_ICICLE_KIT_BASE_DESIGN SmartDesign, double-click on FIC0_MASTER and increase the __Number of Slaves__ from 3 to 4
 
-- in the "Slave Configuration" tab, adapt the settings to access the logic at addresses 0x60800000 to 0x6080000F, as follows
+- in the __Slave Configuration__ tab, adapt the settings to access the logic at addresses 0x60800000 to 0x6080000F, as follows
 
 ![](wskd_libero/axi4cfg.png)
 
-- click OK, right-click on "FIC0_MASTER" and select "Update component", save the design and click "Build Hierarchy".
+- click __OK__, right-click on "FIC0_MASTER" and select __Update component__, save the design and click __Build Hierarchy__.
 
-A "Generate Component" on the MPFS_ICICLE_KIT_BASE_DESIGN SmartDesign in the "Design Hierarchy" tab completes all reference design modifications.
+A __Generate Component__ on the MPFS_ICICLE_KIT_BASE_DESIGN SmartDesign in the __Design Hierarchy__ tab completes all reference design modifications.
 
 ### Finishing up by editing the I/O constraints files
 
@@ -95,45 +97,47 @@ A "Generate Component" on the MPFS_ICICLE_KIT_BASE_DESIGN SmartDesign in the "De
 
 - the file ``constraint\io\ICICLE_Rpi.pdc`` will be skipped alltogether, thus no modifications are required here
 
-## Incorporating Whiznium StarterKit Device into the modified Icicle kit reference design
+## Incorporating the Whiznium StarterKit Device IP
 
-Pending full integration into the [Whiznium StarterKit Device Git repository](https://github.com/mpsitech/wskd-Whiznium-StarterKit-Device), a separate Libero SoC block design is available online in the form of a [.zip archive](https://content.mpsitech.cloud/wskd_lite_core.zip).
+In case the IP has not been created from scratch, it can be downloaded as [.zip file](https://content.mpsitech.cloud/wskd/iccl_core_v1.0.4.zip), and extracted e.g. here ``C:\Users\mpsitech\fpgacode\wskd_core``.
 
-- extract this archive next to the main project, e.g. to ``C:\Users\mpsitech\fpgacode\icicle\wskd_lite_core``
-- through "File" -> "Import", add the block ``designer\Icicle_ip_v1_0.cxz`` to the main project
-- in the same manner, also add the I/O constraints file ``ICICLE_wskd.pdc``
+- through __File__ -> __Import__, add the block ``designer\Iccl_ip_v1_0_S_AXI\Iccl_ip_v1_0_S_AXI.cxz`` to the main project
+- in the same manner, also add the I/O constraint file ``C:\Users\mpsitech\temp\wskd\fpgawskd\iccl\Iccl.pdc``
 
 To wire up the newly imported block, perform the following steps:
 
-- from the "Design Hierarchy" tab, drag the "Icicle_ip_v1_0" block onto the MPFS_ICICLE_KIT_BASE_DESIGN SmartDesign
-- select the block by clicking on its symbol and open the "QuickConnect" dialog
-- connect extclk to CLOCKS_AND_RESETS/CLK_125MHz
-- connect resetn to CLOCKS_AND_RESETS/RESETN_CLK_125MHz
-- connect the S_AXI bus to FIC0_MASTER/AXI4mslave3
-- select "Promote to Top Level" for all other pins
+- from the __Design Hierarchy__ tab, drag the "Iccl_ip_v1_0_S_AXI" block onto the MPFS_ICICLE_KIT_BASE_DESIGN SmartDesign
+- select the block by clicking on its symbol and open the __QuickConnect__ dialog from the toolbar
+- connect "extclk" to "CLOCKS_AND_RESETS/CLK_125MHz"
+- connect "extresetn" to "CLOCKS_AND_RESETS/RESETN_CLK_125MHz"
+- connect the "S_AXI" bus to "FIC0_MASTER/AXI4mslave3"
+- select __Promote to Top Level__ for all other pins
 - close the dialog
 
-On the canvas, the block should look as shown below, indicating the I/O's required to connect to the 5MP camera, line lasers and turntable stepper motor.
+The relevant section of the canvas should look as shown below, indicating the I/O's required to connect to the 5MP camera, line lasers and turntable stepper motor.
 
 ![](wskd_libero/canvas.png)
 
-Save the design, click "Build Hierarchy" and run a final "Generate Component".
+Save the design, click __Build Hierarchy__ and run a final __Generate Component__.
 
 ## Synthesis and design implementation
 
-Before launching synthesis, it is required to de-select ``constraint\io\ICICLE_Rpi.pdc`` while selecting ``constraint\io\ICICLE_wskd.pdc`` in the "Constraint Manager", "I/O Attributes" tab, and save.
+Before launching synthesis, it is required to de-select ``constraint\io\ICICLE_Rpi.pdc`` while selecting ``constraint\io\Iccl.pdc`` in the __Constraint Manager__ -> __I/O Attributes__ tab, and save.
 
-After this, the design flow can be run all the way up to "Generate FPGA Array Data".
+After this, the design flow can be run all the way to __Generate FPGA Array Data__.
 
 ## Deployment and test
 
-The goal within Libero SoC is to generate binary data to be deployed using a FlashPro5 JTAG programmer. Before doing this, the HSS payload has to be co-packaged with the FPGA array data:
+The goal within Libero SoC is to generate binary data to be deployed using a FlashPro5 JTAG programmer. Before doing this, the HSS payload and the content of the camera interface's parameter ROM (used for camera initialization) have to be co-packaged with the FPGA array data:
 
-- navigate to "Configure Design Initialization Data and Memories", the "eNVM" tab
-- click "Add ..." / "Add Boot Mode 1 Client"
-- as file either select the downloaded or built HSS .hex file (see above) and save
+- navigate to __Configure Design Initialization Data and Memories__, the __eNVM__ tab
+- click __Add ...__ -> __Add Boot Mode 1 Client__
+- as file either select the downloaded or built HSS .hex file (see above) and click __OK__
 
-- run "Export FlashPro Express Job", not changing any parameters
+- on the __Fabric RAMs__ tab, double-click on ``Iccl_ip_v_1_0_S_AXI_0/myTop/myCamif/myParrom/Dpsram_size2kB_p8_0``
+- switch to __Content from file__ and select ``C:\Users\mpsitech\temp\wskd\fpgawskd\iccl\support\parrom.hex``
+
+- save the project and run __Export FlashPro Express Job__, not changing any parameters
 
 The file which can be processed by FPExpress can be found at ``MPFS_ICICLE_SD_CARD\designer\MPFS_ICICLE_KIT_BASE_DESIGN\export\MPFS_ICICLE_KIT_BASE_DESIGN.job``.
 
@@ -148,9 +152,9 @@ A number of jumper settings should be established / verified before power-on of 
 
 With the FlashPro5 programmer connected to the workstation via USB, and the target powered on, FPExpress can be run for programming:
 
-- select "Job Projects" -> "New..." and insert the path to the file generated above in the "Import FlashPro Express job file" text field
-- to avoid confusion, the "FlashPro Express job project location" should be the same as the job file's location; click "OK" to close the dialog
-- click "RUN"; programming should take about 1-2 minutes to complete
+- select __New...__ and insert the path to the file generated above in the __Import FlashPro Express job file__ text field
+- to avoid confusion, the __FlashPro Express job project location__ should be the same as the job file's location; click __OK__ to close the dialog
+- click __RUN__; programming should take about 1-2 minutes to complete
 
 If the system is now power-cycled - with the Yocto SD card inserted - it should properly boot up Embedded Linux with FPGA support through a character device driver (see [Setting Up A New PolarFire SoC Yocto SDK For Use With Whiznium](./setup_riscv.md)).
 

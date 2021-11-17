@@ -36,17 +36,20 @@ Structure
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Name and comment by locale [``[ImeIJAVKeylistKey3]``](#921-name-and-comment-by-locale-imeijavkeylistkey3)
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Generics cluster [``[ImeICGeneric]``](#93-generics-cluster-imeicgeneric)
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Ports cluster [``[ImeICPort]``](#94-ports-cluster-imeicport)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ Controller [``[ImeIMController]``](#95-controller-imeimcontroller)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ Command [``[ImeIMCommand]``](#951-command-imeimcommand)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Invocation parameters [``[ImeIAMCommandInvpar]``](#9511-invocation-parameters-imeiamcommandinvpar)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Return parameters [``[ImeIAMCommandRetpar]``](#9512-return-parameters-imeiamcommandretpar)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ Error [``[ImeIMError]``](#952-error-imeimerror)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Parameters [``[ImeIAMErrorPar]``](#9521-parameters-imeiamerrorpar)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ Vector [``[ImeIMVector]``](#953-vector-imeimvector)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Vector item [``[ImeIMVectoritem]``](#9531-vector-item-imeimvectoritem)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- File [``[ImeIMFile2]``](#96-file-imeimfile2)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Generic [``[ImeIMGeneric]``](#97-generic-imeimgeneric)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Port [``[ImeIMPort]``](#98-port-imeimport)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Variables cluster [``[ImeICVariable]``](#95-variables-cluster-imeicvariable)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ Controller [``[ImeIMController]``](#96-controller-imeimcontroller)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ Command [``[ImeIMCommand]``](#961-command-imeimcommand)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Invocation parameters [``[ImeIAMCommandInvpar]``](#9611-invocation-parameters-imeiamcommandinvpar)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Return parameters [``[ImeIAMCommandRetpar]``](#9612-return-parameters-imeiamcommandretpar)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ Error [``[ImeIMError]``](#962-error-imeimerror)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Parameters [``[ImeIAMErrorPar]``](#9621-parameters-imeiamerrorpar)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ Vector [``[ImeIMVector]``](#963-vector-imeimvector)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Vector item [``[ImeIMVectoritem]``](#9631-vector-item-imeimvectoritem)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- File [``[ImeIMFile2]``](#97-file-imeimfile2)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Generic [``[ImeIMGeneric]``](#98-generic-imeimgeneric)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Port [``[ImeIMPort]``](#99-port-imeimport)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Variable [``[ImeIMVariable]``](#910-variable-imeimvariable)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Corresponding modules [``[ImeIRMModuleMModule]``](#911-corresponding-modules-imeirmmodulemmodule)
 <br>&nbsp;&nbsp;&nbsp;&nbsp;\+ Unit [``[ImeIMUnit]``](#10-unit-imeimunit)
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ I/O bank [``[ImeIMBank]``](#101-io-bank-imeimbank)
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ Pin [``[ImeIMPin]``](#1011-pin-imeimpin)
@@ -97,7 +100,7 @@ Use: populate non-record specific key lists.
 
 Column|Content|
 -|-|
-srefKlsIxWdbeVKeylist (string)|key list<br>KlstWdbeKAMLibraryMakefileTag: tag<br>KlstWdbeKAMMachineMakefileTag: tag<br>KlstWdbeKAMMachineParKey: key<br>KlstWdbeKAMPersonDetailType: type<br>KlstWdbeKAMPinParKey: key<br>KlstWdbeKMUnitPackage: package<br>KlstWdbeKMUnitToolch: tool chain<br>KlstWdbeKHdltype: HDL data type<br>KlstWdbeKMBankVoltstd: voltage standard<br>KlstWdbeKMFamilyVendor: vendor<br>KlstWdbeKMFileContent: content<br>KlstWdbeKMFileMimetype: MIME type<br>KlstWdbeKMReleaseOption: options<br>KlstWdbeKMVectorOption: options<br>KlstWdbeKRMCoreprojectMPersonFunction: function<br>KlstWdbeKRMPersonMProjectFunction: function<br>KlstKWdbeMtpModbscbuCustop: WdbeMtpModbscbu custom operations<br>KlstKWdbeMtpModbsctdCustop: WdbeMtpModbsctd custom operations<br>KlstKWdbeMtpModdetCustop: WdbeMtpModdet custom operations<br>KlstKWdbeMtpPlhfpgaCustop: WdbeMtpPlhfpga custom operations<br>KlstKWdbeMtpPlhmcuCustop: WdbeMtpPlhmcu custom operations<br>KlstKWdbeMtpWrfpgaCustop: WdbeMtpWrfpga custom operations<br>KlstKWdbeMtpWrmcuCustop: WdbeMtpWrmcu custom operations|
+srefKlsIxWdbeVKeylist (string)|key list<br>KlstWdbeKAMLibraryMakefileTag: tag<br>KlstWdbeKAMMachineMakefileTag: tag<br>KlstWdbeKAMMachineParKey: key<br>KlstWdbeKAMModuleParKey: key<br>KlstWdbeKAMPeripheralParKey: key<br>KlstWdbeKAMPersonDetailType: type<br>KlstWdbeKAMPinParKey: key<br>KlstWdbeKHdltype: HDL data type<br>KlstWdbeKMBankVoltstd: voltage standard<br>KlstWdbeKMFileContent: content<br>KlstWdbeKMFileMimetype: MIME type<br>KlstWdbeKMReleaseOption: options<br>KlstWdbeKMUnitPackage: package<br>KlstWdbeKMUnitToolch: tool chain<br>KlstWdbeKMVectorOption: options<br>KlstWdbeKRMCoreprojectMPersonFunction: function<br>KlstWdbeKRMModuleMModuleFunction: function<br>KlstWdbeKRMPersonMProjectFunction: function<br>KlstWdbeKVendor: vendor<br>KlstKWdbeMtpCplmstbuCustop: WdbeMtpCplmstbu custom operations<br>KlstKWdbeMtpCplmsttdCustop: WdbeMtpCplmsttd custom operations<br>KlstKWdbeMtpGenfstCustop: WdbeMtpGenfst custom operations<br>KlstKWdbeMtpPlhfpgaCustop: WdbeMtpPlhfpga custom operations<br>KlstKWdbeMtpPlhmcuCustop: WdbeMtpPlhmcu custom operations<br>KlstKWdbeMtpWrfpgaCustop: WdbeMtpWrfpga custom operations<br>KlstKWdbeMtpWrmcuCustop: WdbeMtpWrmcu custom operations|
 sref (string)|identifier|
 Avail (string)|availability rule|
 Implied (string)|rule for implied|
@@ -236,7 +239,7 @@ Use: group silicon devices into product families.
 Column|Content|
 -|-|
 iref (ubigint)|integer reference|
-srefKVendor (string)|vendor<br>mchp: Microchip<br>st: STMicroelectronics<br>xlnx: Xilinx|
+srefWdbeKVendor (string)|vendor<br>ipsg: Intel<br>mchp: Microchip<br>slbs: Silicon Laboratories<br>st: ST Microelectronics<br>xlnx: Xilinx|
 Title (string)|name|
 Comment (string)|comment|
 
@@ -374,6 +377,7 @@ srefIxVBasetype (string)|type<br>top: top<br>hostif: host interface<br>ehostif: 
 hsrefSupRefWdbeMModule (string)|super module|
 srefTplRefWdbeMModule (string)|template|
 sref (string)|identifier|
+srefWdbeKVendor (string)|mnfprim type - vendor<br>ipsg: Intel<br>mchp: Microchip<br>slbs: Silicon Laboratories<br>st: ST Microelectronics<br>xlnx: Xilinx|
 Srefrule (string)|identifier rule for instance naming - can include any of the module's parmeters in the form \&par\;|
 Comment (string)|comment|
 
@@ -474,17 +478,35 @@ iref (ubigint)|integer reference|
 
 [//]: # (IP ImeICPort.columns - END)
 
-### 9.5 Controller ``[ImeIMController]``
+### 9.5 Variables cluster ``[ImeICVariable]``
+
+[//]: # (IP ImeICVariable.superUse - BEGIN)
+
+Super import: module (1:N)
+
+Use: group variables.
+
+[//]: # (IP ImeICVariable.superUse - END)
+
+[//]: # (IP ImeICVariable.columns - BEGIN)
+
+Column|Content|
+-|-|
+iref (ubigint)|integer reference|
+
+[//]: # (IP ImeICVariable.columns - END)
+
+### 9.6 Controller ``[ImeIMController]``
 
 [//]: # (IP ImeIMController.superUse - BEGIN)
 
 Super import: module (1:1)
 
-Use: indicate a module is a controller (no content)
+Use: indicate a module is a controller (no content).
 
 [//]: # (IP ImeIMController.columns - END)
 
-### 9.5.1 Command ``[ImeIMCommand]``
+### 9.6.1 Command ``[ImeIMCommand]``
 
 [//]: # (IP ImeIMCommand.superUse - BEGIN)
 
@@ -505,7 +527,7 @@ Comment (string)|comment|
 
 [//]: # (IP ImeIMCommand.columns - END)
 
-### 9.5.1.1 Invocation parameters ``[ImeIAMCommandInvpar]``
+### 9.6.1.1 Invocation parameters ``[ImeIAMCommandInvpar]``
 
 [//]: # (IP ImeIAMCommandInvpar.superUse - BEGIN)
 
@@ -520,7 +542,7 @@ Use: self-explanatory.
 Column|Content|
 -|-|
 sref (string)|identifier|
-srefIxWdbeVPartype (string)|parameter data type<br>tix: vector item index<br>_bool: boolean<br>tinyint: integer / byte (8bit)<br>utinyint: unsigned integer / byte (8bit)<br>smallint: integer (16bit)<br>usmallint: unsigned integer (16bit)<br>int: integer (32bit)<br>uint: unsigned integer (32bit)<br>blob: fixed length binary large object<br>vblob: variable length bin. large. obj.|
+srefIxWdbeVPartype (string)|parameter data type<br>tix: vector item index<br>_bool: boolean<br>int8: integer / byte (8bit)<br>uint8: unsigned integer / byte (8bit)<br>int16: integer (16bit)<br>uint16: unsigned integer (16bit)<br>int32: integer (32bit)<br>uint32: unsigned integer (32bit)<br>blob: fixed length binary large object<br>vblob: variable length bin. large. obj.|
 srefRefWdbeMVector (string)|tix par. type - vector|
 Length (utinyint)|blob/vblob partype - (max.) length|
 Defval (string)|default value|
@@ -529,7 +551,7 @@ Comment (string)|comment|
 
 [//]: # (IP ImeIAMCommandInvpar.columns - END)
 
-### 9.5.1.2 Return parameters ``[ImeIAMCommandRetpar]``
+### 9.6.1.2 Return parameters ``[ImeIAMCommandRetpar]``
 
 [//]: # (IP ImeIAMCommandRetpar.superUse - BEGIN)
 
@@ -544,14 +566,14 @@ Use: self-explanatory.
 Column|Content|
 -|-|
 sref (string)|identifier|
-srefIxWdbeVPartype (string)|parameter data type<br>tix: vector item index<br>_bool: boolean<br>tinyint: integer / byte (8bit)<br>utinyint: unsigned integer / byte (8bit)<br>smallint: integer (16bit)<br>usmallint: unsigned integer (16bit)<br>int: integer (32bit)<br>uint: unsigned integer (32bit)<br>blob: fixed length binary large object<br>vblob: variable length bin. large. obj.|
+srefIxWdbeVPartype (string)|parameter data type<br>tix: vector item index<br>_bool: boolean<br>int8: integer / byte (8bit)<br>uint8: unsigned integer / byte (8bit)<br>int16: integer (16bit)<br>uint16: unsigned integer (16bit)<br>int32: integer (32bit)<br>uint32: unsigned integer (32bit)<br>blob: fixed length binary large object<br>vblob: variable length bin. large. obj.|
 srefRefWdbeMVector (string)|tix par. type - vector|
 Length (utinyint)|blob/vblob partype - (max.) length|
 Comment (string)|comment|
 
 [//]: # (IP ImeIAMCommandRetpar.columns - END)
 
-### 9.5.2 Error ``[ImeIMError]``
+### 9.6.2 Error ``[ImeIMError]``
 
 [//]: # (IP ImeIMError.superUse - BEGIN)
 
@@ -571,7 +593,7 @@ Comment (string)|comment|
 
 [//]: # (IP ImeIMError.columns - END)
 
-### 9.5.2.1 Parameters ``[ImeIAMErrorPar]``
+### 9.6.2.1 Parameters ``[ImeIAMErrorPar]``
 
 [//]: # (IP ImeIAMErrorPar.superUse - BEGIN)
 
@@ -586,20 +608,20 @@ Use: self-explanatory.
 Column|Content|
 -|-|
 sref (string)|identifier|
-srefIxWdbeVPartype (string)|parameter data type<br>tix: vector item index<br>_bool: boolean<br>tinyint: integer / byte (8bit)<br>utinyint: unsigned integer / byte (8bit)<br>smallint: integer (16bit)<br>usmallint: unsigned integer (16bit)<br>int: integer (32bit)<br>uint: unsigned integer (32bit)<br>blob: fixed length binary large object<br>vblob: variable length bin. large. obj.|
+srefIxWdbeVPartype (string)|parameter data type<br>tix: vector item index<br>_bool: boolean<br>int8: integer / byte (8bit)<br>uint8: unsigned integer / byte (8bit)<br>int16: integer (16bit)<br>uint16: unsigned integer (16bit)<br>int32: integer (32bit)<br>uint32: unsigned integer (32bit)<br>blob: fixed length binary large object<br>vblob: variable length bin. large. obj.|
 srefRefWdbeMVector (string)|tix par. type - vector|
 Length (utinyint)|length|
 Comment (string)|comment|
 
 [//]: # (IP ImeIAMErrorPar.columns - END)
 
-### 9.5.3 Vector ``[ImeIMVector]``
+### 9.6.3 Vector ``[ImeIMVector]``
 
 [//]: # (IP ImeIMVector.superUse - BEGIN)
 
 Super import: controller (1:N)
 
-Use: utinyint index vector specific to controller. Vector items can be used as arguments for the controller's commands and errors.
+Use: uint8_t index vector specific to controller. Vector items can be used as arguments for the controller's commands and errors.
 
 [//]: # (IP ImeIMVector.superUse - END)
 
@@ -613,7 +635,7 @@ srefsKOption (string)|options<br>notit: no titles<br>cmt: comments<br>apdfed: ap
 
 [//]: # (IP ImeIMVector.columns - END)
 
-### 9.5.3.1 Vector item ``[ImeIMVectoritem]``
+### 9.6.3.1 Vector item ``[ImeIMVectoritem]``
 
 [//]: # (IP ImeIMVectoritem.superUse - BEGIN)
 
@@ -633,7 +655,7 @@ Comment (string)|comment|
 
 [//]: # (IP ImeIMVectoritem.columns - END)
 
-### 9.6 File ``[ImeIMFile2]``
+### 9.7 File ``[ImeIMFile2]``
 
 [//]: # (IP ImeIMFile2.superUse - BEGIN)
 
@@ -654,7 +676,7 @@ Comment (string)|comment|
 
 [//]: # (IP ImeIMFile2.columns - END)
 
-### 9.7 Generic ``[ImeIMGeneric]``
+### 9.8 Generic ``[ImeIMGeneric]``
 
 [//]: # (IP ImeIMGeneric.superUse - BEGIN)
 
@@ -668,17 +690,17 @@ Use: equivalent to VHDL generic.
 
 Column|Content|
 -|-|
-irefRefWdbeCGeneric (ubigint)|TblWdbeCGeneric|
+irefRefWdbeCGeneric (ubigint)|integer reference to generics cluster|
 sref (string)|identifier|
-srefWdbeKHdltype (string)|HDL data type<br>char: character<br>int: integer<br>nat: natural<br>sl: standard logic<br>slvup: standard logic vector up<br>slvdn: standard logic vector down<br>str: string|
-Width (usmallint)|slvup, slvdn HDL data types - width|
+srefWdbeKHdltype (string)|HDL data type<br>_bool: boolean<br>int: integer<br>nat: natural<br>sgn: signed<br>sl: standard logic<br>slvup: standard logic vector up<br>slvdn: standard logic vector down<br>str: string<br>usgn: unsigned|
+Width (usmallint)|sgn, slvup, slvdn, usgn HDL data types - width|
 Minmax (string)|nat HDL data type - range|
 Defval (string)|default value|
 Comment (string)|comment|
 
 [//]: # (IP ImeIMGeneric.columns - END)
 
-### 9.8 Port ``[ImeIMPort]``
+### 9.9 Port ``[ImeIMPort]``
 
 [//]: # (IP ImeIMPort.superUse - BEGIN)
 
@@ -692,17 +714,58 @@ Use: equivalent to VHDL port.
 
 Column|Content|
 -|-|
-irefRefWdbeCPort (ubigint)|TblWdbeCPort|
+irefRefWdbeCPort (ubigint)|integer reference to ports cluster|
 srefMdlIxVCat (string)|module<br>reset: global reset<br>clk: clock<br>rtewrp: route to wrapper signal<br>rtetop: route to top module signal<br>cmdbus: command bus<br>imb: inter-module buffer<br>rtesup: route to super module<br>rtepin: route to pin<br>dbg: debug|
 sref (string)|identifier|
 srefIxVDir (string)|direction<br>in: input<br>inout: input/output<br>out: output|
-srefWdbeKHdltype (string)|HDL data type<br>char: character<br>int: integer<br>nat: natural<br>sl: standard logic<br>slvup: standard logic vector up<br>slvdn: standard logic vector down<br>str: string|
-Width (usmallint)|slvup, slvdn HDL data types - width|
+srefWdbeKHdltype (string)|HDL data type<br>_bool: boolean<br>int: integer<br>nat: natural<br>sgn: signed<br>sl: standard logic<br>slvup: standard logic vector up<br>slvdn: standard logic vector down<br>str: string<br>usgn: unsigned|
+Width (usmallint)|sgn, slvup, slvdn, usgn HDL data types - width|
 Minmax (string)|nat HDL data type - range|
 Defval (string)|default value|
 Comment (string)|comment|
 
 [//]: # (IP ImeIMPort.columns - END)
+
+### 9.10 Variable ``[ImeIMVariable]``
+
+[//]: # (IP ImeIMVariable.superUse - BEGIN)
+
+Super import: module (1:N)
+
+Use: equivalent to C shared data entry.
+
+[//]: # (IP ImeIMVariable.superUse - END)
+
+[//]: # (IP ImeIMVariable.columns - BEGIN)
+
+Column|Content|
+-|-|
+irefRefWdbeCVariable (ubigint)|integer reference to variables cluster|
+sref (string)|identifier|
+srefWdbeKHdltype (string)|HDL data type<br>bit: bit<br>_bool: boolean<br>btarr: byte array<br>char: character<br>ptr: pointer<br>sgn: signed<br>usgn: unsigned|
+Width (usmallint)|sgn, usgn HDL data types - width|
+Minmax (string)|btarr HDL data type - range|
+Comment (string)|comment|
+
+[//]: # (IP ImeIMVariable.columns - END)
+
+### 9.11 Corresponding modules ``[ImeIRMModuleMModule]``
+
+[//]: # (IP ImeIRMModuleMModule.superUse - BEGIN)
+
+Super import: module (1:N)
+
+Use: specify required corresponding module functions.
+
+[//]: # (IP ImeIRMModuleMModule.superUse - END)
+
+[//]: # (IP ImeIRMModuleMModule.columns - BEGIN)
+
+Column|Content|
+-|-|
+srefKFunction (string)|function<br>mgmt: management<br>snk: sink<br>src: source|
+
+[//]: # (IP ImeIRMModuleMModule.columns - END)
 
 ### 10 Unit ``[ImeIMUnit]``
 
@@ -716,12 +779,12 @@ Use: specify silicon devices along with their peripherals and pinouts.
 
 Column|Content|
 -|-|
-srefIxVBasetype (string)|type<br>fpga: FPGA-based<br>mcu: microcontroller-based<br>oth: other|
+srefIxVBasetype (string)|type<br>extdef: externally defined<br>fpga: FPGA-based<br>mcu: microcontroller-based|
 srefRefIxVTbl (string)|reference<br>void: none<br>fam: product family|
 irefRefUref (ubigint)|product family reference - integer reference to product family|
 sref (string)|identifier|
 Title (string)|name|
-srefKPackage (string)|package<br>bga132<br>bga236<br>bga320<br>lqfp48<br>qfp100<br>ssop20<br>ssop28|
+srefKPackage (string)|package<br>bga132<br>bga236<br>bga320<br>bga484<br>bga672<br>lqfp48<br>qfn20<br>qfn28<br>qfp100<br>ssop20<br>ssop28|
 Comment (string)|comment|
 
 [//]: # (IP ImeIMUnit.columns - END)
@@ -732,7 +795,7 @@ Comment (string)|comment|
 
 Super import: unit (1:N)
 
-Use: grouping entity for pins, mostly applicable to FPGA's.
+Use: grouping entity for pins.
 
 [//]: # (IP ImeIMBank.superUse - END)
 
@@ -788,7 +851,7 @@ sref (string)|identifier|
 
 Super import: unit (1:N)
 
-Use: specify on-chip peripherals.
+Use: specify on-chip peripherals for MCU-type units.
 
 [//]: # (IP ImeIMPeripheral.superUse - END)
 
@@ -978,4 +1041,4 @@ Lastname (string)|last name|
 
 [//]: # (IP ImeIJMPersonLastname.columns - END)
 
-<small>Markdown for WhizniumDBE v1.1.3 auto-generated (what else ;-) ) by WhizniumSBE on 1 Jan 2021</small>
+<small>Markdown for WhizniumDBE v1.1.17 auto-generated (what else ;-) ) by WhizniumSBE on 14 Nov 2021</small>

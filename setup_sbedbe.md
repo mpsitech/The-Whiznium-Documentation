@@ -64,7 +64,7 @@ This screen should show up:
 ![](setup_sbedbe/Wznmd.png)
 
 - log in with username/password: temp/asdf1234
-- in the _Session_ menu, choose _Close session_
+- in the __Session__ menu, choose __Close session__
 - back on the (1) command line, type ``Wznmd >> quit``
 
 The full (1) command line output should read:
@@ -84,7 +84,7 @@ Wznmd >> showNodes
 Wznmd >> quit
 ```
 
-Actually working with WhizniumSBE requires preparing an initialization file with your environment-specific information, optionally using the WhizniumSBE Bootstrap helper tool. This is descripbed in the first section of the [WhizniumSBE Development Workflow](./sbe.md) document.
+Actually working with WhizniumSBE requires preparing an initialization file with your environment-specific information, optionally using the _WhizniumSBE Bootstrap_ helper tool. This is descripbed in the first section of the [WhizniumSBE Development Workflow](./sbe.md) document.
 
 # Setting Up WhizniumDBE On Your Workstation
 
@@ -146,7 +146,7 @@ This screen should show up:
 ![](setup_sbedbe/Wdbed.png)
 
 - log in with username/password: temp/asdf1234
-- in the _Session_ menu, choose _Close session_
+- in the __Session__ menu, choose __Close session__
 - back on the (1) command line, type ``Wdbed >> quit``
 
 The full (1) command line output should read:

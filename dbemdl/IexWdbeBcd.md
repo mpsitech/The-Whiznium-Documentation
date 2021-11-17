@@ -3,7 +3,7 @@
 Basic core description ``IexWdbeBcd``
 ===
 
-**NOTE: The basic/detailed core description feature is intended for future use. Modelling roughly follows the basic/detailed device description counterparts.**
+**NOTE: The basic/detailed core description feature is intended for future use. Modelling roughly follows the device description counterparts.**
 
 Schema
 ---
@@ -17,10 +17,10 @@ Structure
 
 [//]: # (IP structure - BEGIN)
 
-&nbsp;&nbsp;&nbsp;&nbsp;\+ Module [``[ImeIMModule]``](#1-Module-ImeIMModule)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Parameters [``[ImeIAMModulePar]``](#11-Parameters-ImeIAMModulePar)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ Keys [``[ImeIAVKeylistKey]``](#12-Keys-ImeIAVKeylistKey)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Name and comment by locale [``[ImeIJAVKeylistKey]``](#121-Name-and-comment-by-locale-ImeIJAVKeylistKey)
+&nbsp;&nbsp;&nbsp;&nbsp;\+ Module [``[ImeIMModule]``](#1-module-imeimmodule)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Parameters [``[ImeIAMModulePar]``](#11-parameters-imeiammodulepar)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ Keys [``[ImeIAVKeylistKey]``](#12-keys-imeiavkeylistkey)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Name and comment by locale [``[ImeIJAVKeylistKey]``](#121-name-and-comment-by-locale-imeijavkeylistkey)
 
 [//]: # (IP structure - END)
 

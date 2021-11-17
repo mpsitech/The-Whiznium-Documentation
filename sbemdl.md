@@ -4,12 +4,12 @@
 
 WhizniumSBE accepts model information input either as tab-separated .txt files (edit with Excel / LibreOfficeCalc recommended) or as .xml files. 
 
-For tool initialitation, optionally using WhizniumSBE Bootstrap, these two model files are used:
+For tool initialitation, optionally using _WhizniumSBE Bootstrap_, these two model files are used:
 
 * [Initialization data](sbemdl/IexWznmIni.md)
 * [Projects and versions](sbemdl/IexWznmPrj.md)
 
-Nine main model files hold the model information of WhizniumSBE-backed projects, they are preferrably applied using WhizniumSBE Iterator:
+Nine main model files hold the model information of WhizniumSBE-backed projects, they are preferrably applied using _WhizniumSBE Iterator_:
 
 * [Deployment information](sbemdl/IexWznmDpl.md)
 * [Global features](sbemdl/IexWznmGbl.md)

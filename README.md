@@ -20,8 +20,6 @@ Note: you are free to use this documentation offline by cloning it and use e.g. 
 
 [WhizniumSBE Development Workflow](./sbe.md)
 
-[Setting Up The Whiznium StarterKit Project](./wzsk.md)
-
 [WhizniumSBE-Backed Project Source Code Organization](./sbeincl.md)
 
 [WhizniumSBE Model Files](./sbemdl.md)
@@ -34,10 +32,6 @@ Note: you are free to use this documentation offline by cloning it and use e.g. 
 
 [WhizniumDBE Development Workflow](./dbe.md)
 
-[Running The Vivado Design Flow For Whiznium StarterKit Device](./wskd_vivado.md)
-
-[Running The Libero SoC Design Flow For Whiznium StarterKit Device](./wskd_libero.md)
-
 [WhizniumDBE-Backed Project Source Code Organization](./dbeincl.md)
 
 [WhizniumDBE Model Files](./dbemdl.md)
@@ -45,6 +39,24 @@ Note: you are free to use this documentation offline by cloning it and use e.g. 
 [WhizniumDBE Glossary Of Terms](./dbegloss.md)
 
 [WhizniumDBE Master Database](./dbedb.md)
+
+## Whiznium StarterKit topics
+
+[Setting Up The Whiznium StarterKit Project](./wzsk.md)
+
+[Running The Vivado Design Flow For Whiznium StarterKit Device](./wskd_vivado.md)
+
+&nbsp;&nbsp;[Creating The Whiznium StarterKit Device Vivado IP From Scratch](./wskdip_vivado.md)
+
+[Running The Libero SoC Design Flow For Whiznium StarterKit Device](./wskd_libero.md)
+
+&nbsp;&nbsp;[Creating The Whiznium StarterKit Device Libero SoC IP From Scratch](./wskdip_libero.md)
+
+[Running The Simplicity Studio Design Flow For Whiznium StarterKit Device](./wskd_splcty.md)
+
+&nbsp;&nbsp;[Creating The Whiznium StarterKit Device Simplicity Studio Solution From Scratch](./wskdsln_splcty.md)
+
+Last update: November 16, 2021.
 
 ---
 

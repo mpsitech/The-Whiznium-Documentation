@@ -15,35 +15,35 @@ Structure
 
 [//]: # (IP structure - BEGIN)
 
-&nbsp;&nbsp;&nbsp;&nbsp;\+ Block [``[ImeIMBlock2]``](#1-Block-ImeIMBlock2)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ Items [``[ImeIAMBlockItem2]``](#11-Items-ImeIAMBlockItem2)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Default value by release [``[ImeIJAMBlockItem2]``](#111-Default-value-by-release-ImeIJAMBlockItem2)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Items cluster [``[ImeICAMBlockItem2]``](#12-Items-cluster-ImeICAMBlockItem2)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;\- Call [``[ImeIMCall]``](#2-Call-ImeIMCall)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;\+ Job [``[ImeIMJob]``](#3-Job-ImeIMJob)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Commands [``[ImeIAMJobCmd]``](#31-Commands-ImeIAMJobCmd)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Variables [``[ImeIAMJobVar]``](#32-Variables-ImeIAMJobVar)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Variables cluster [``[ImeICAMJobVar]``](#33-Variables-cluster-ImeICAMJobVar)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ Block [``[ImeIMBlock1]``](#34-Block-ImeIMBlock1)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ Items [``[ImeIAMBlockItem1]``](#341-Items-ImeIAMBlockItem1)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Default value by release [``[ImeIJAMBlockItem1]``](#3411-Default-value-by-release-ImeIJAMBlockItem1)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Items cluster [``[ImeICAMBlockItem1]``](#342-Items-cluster-ImeICAMBlockItem1)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ Method [``[ImeIMMethod]``](#35-Method-ImeIMMethod)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Invocation parameters [``[ImeIAMMethodInvpar]``](#351-Invocation-parameters-ImeIAMMethodInvpar)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Return parameters [``[ImeIAMMethodRetpar]``](#352-Return-parameters-ImeIAMMethodRetpar)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Sensitivity [``[ImeIMSensitivity1]``](#36-Sensitivity-ImeIMSensitivity1)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ Stage [``[ImeIMStage]``](#37-Stage-ImeIMStage)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Sensitivity [``[ImeIMSensitivity2]``](#371-Sensitivity-ImeIMSensitivity2)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ Squawk [``[ImeIMSquawk]``](#372-Squawk-ImeIMSquawk)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Text by locale [``[ImeIJMSquawkTitle]``](#3721-Text-by-locale-ImeIJMSquawkTitle)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- TblWznmRMSquawkMStub [``[ImeIRMSquawkMStub]``](#3722-TblWznmRMSquawkMStub-ImeIRMSquawkMStub)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ Vector [``[ImeIMVector]``](#38-Vector-ImeIMVector)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ Vector item [``[ImeIMVectoritem]``](#381-Vector-item-ImeIMVectoritem)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Name and comment by locale [``[ImeIJMVectoritem]``](#3811-Name-and-comment-by-locale-ImeIJMVectoritem)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- TblWznmRMJobMJob [``[ImeIRMJobMJob]``](#39-TblWznmRMJobMJob-ImeIRMJobMJob)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- TblWznmRMJobMOp [``[ImeIRMJobMOp]``](#310-TblWznmRMJobMOp-ImeIRMJobMOp)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- TblWznmRMJobMOppack [``[ImeIRMJobMOppack]``](#311-TblWznmRMJobMOppack-ImeIRMJobMOppack)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;\- TblWznmRMCallMStub [``[ImeIRMCallMStub]``](#4-TblWznmRMCallMStub-ImeIRMCallMStub)
+&nbsp;&nbsp;&nbsp;&nbsp;\+ Block [``[ImeIMBlock2]``](#1-block-imeimblock2)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ Items [``[ImeIAMBlockItem2]``](#11-items-imeiamblockitem2)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Default value by release [``[ImeIJAMBlockItem2]``](#111-default-value-by-release-imeijamblockitem2)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Items cluster [``[ImeICAMBlockItem2]``](#12-items-cluster-imeicamblockitem2)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;\- Call [``[ImeIMCall]``](#2-call-imeimcall)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;\+ Job [``[ImeIMJob]``](#3-job-imeimjob)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Commands [``[ImeIAMJobCmd]``](#31-commands-imeiamjobcmd)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Variables [``[ImeIAMJobVar]``](#32-variables-imeiamjobvar)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Variables cluster [``[ImeICAMJobVar]``](#33-variables-cluster-imeicamjobvar)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ Block [``[ImeIMBlock1]``](#34-block-imeimblock1)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ Items [``[ImeIAMBlockItem1]``](#341-items-imeiamblockitem1)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Default value by release [``[ImeIJAMBlockItem1]``](#3411-default-value-by-release-imeijamblockitem1)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Items cluster [``[ImeICAMBlockItem1]``](#342-items-cluster-imeicamblockitem1)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ Method [``[ImeIMMethod]``](#35-method-imeimmethod)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Invocation parameters [``[ImeIAMMethodInvpar]``](#351-invocation-parameters-imeiammethodinvpar)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Return parameters [``[ImeIAMMethodRetpar]``](#352-return-parameters-imeiammethodretpar)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Sensitivity [``[ImeIMSensitivity1]``](#36-sensitivity-imeimsensitivity1)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ Stage [``[ImeIMStage]``](#37-stage-imeimstage)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Sensitivity [``[ImeIMSensitivity2]``](#371-sensitivity-imeimsensitivity2)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ Squawk [``[ImeIMSquawk]``](#372-squawk-imeimsquawk)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Text by locale [``[ImeIJMSquawkTitle]``](#3721-text-by-locale-imeijmsquawktitle)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Stubs [``[ImeIRMSquawkMStub]``](#3722-stubs-imeirmsquawkmstub)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ Vector [``[ImeIMVector]``](#38-vector-imeimvector)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ Vector item [``[ImeIMVectoritem]``](#381-vector-item-imeimvectoritem)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Name and comment by locale [``[ImeIJMVectoritem]``](#3811-name-and-comment-by-locale-imeijmvectoritem)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Sub-jobs [``[ImeIRMJobMJob]``](#39-sub-jobs-imeirmjobmjob)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Operation invocations [``[ImeIRMJobMOp]``](#310-operation-invocations-imeirmjobmop)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Operation pack invocations [``[ImeIRMJobMOppack]``](#311-operation-pack-invocations-imeirmjobmoppack)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;\- Stub call sensitivities [``[ImeIRMCallMStub]``](#4-stub-call-sensitivities-imeirmcallmstub)
 
 [//]: # (IP structure - END)
 
@@ -153,7 +153,7 @@ Comment (string)|comment|
 
 [//]: # (IP ImeIMJob.superUse - BEGIN)
 
-Use: retrieve previously added job
+Use: retrieve previously added job.
 
 [//]: # (IP ImeIMJob.superUse - END)
 
@@ -498,7 +498,7 @@ Title (string)|text|
 
 [//]: # (IP ImeIJMSquawkTitle.columns - END)
 
-### 3.7.2.2 TblWznmRMSquawkMStub ``[ImeIRMSquawkMStub]``
+### 3.7.2.2 Stubs ``[ImeIRMSquawkMStub]``
 
 [//]: # (IP ImeIRMSquawkMStub.superUse - BEGIN)
 
@@ -578,7 +578,7 @@ Comment (string)|comment|
 
 [//]: # (IP ImeIJMVectoritem.columns - END)
 
-### 3.9 TblWznmRMJobMJob ``[ImeIRMJobMJob]``
+### 3.9 Sub-jobs ``[ImeIRMJobMJob]``
 
 [//]: # (IP ImeIRMJobMJob.superUse - BEGIN)
 
@@ -599,7 +599,7 @@ srefIxVConstract (string)|constructor action<br>void: none<br>cre: create<br>cus
 
 [//]: # (IP ImeIRMJobMJob.columns - END)
 
-### 3.10 TblWznmRMJobMOp ``[ImeIRMJobMOp]``
+### 3.10 Operation invocations ``[ImeIRMJobMOp]``
 
 [//]: # (IP ImeIRMJobMOp.superUse - BEGIN)
 
@@ -617,7 +617,7 @@ srefRefWznmMOp (string)|operation|
 
 [//]: # (IP ImeIRMJobMOp.columns - END)
 
-### 3.11 TblWznmRMJobMOppack ``[ImeIRMJobMOppack]``
+### 3.11 Operation pack invocations ``[ImeIRMJobMOppack]``
 
 [//]: # (IP ImeIRMJobMOppack.superUse - BEGIN)
 
@@ -635,7 +635,7 @@ srefRefWznmMOppack (string)|operation pack|
 
 [//]: # (IP ImeIRMJobMOppack.columns - END)
 
-### 4 TblWznmRMCallMStub ``[ImeIRMCallMStub]``
+### 4 Stub call sensitivities ``[ImeIRMCallMStub]``
 
 [//]: # (IP ImeIRMCallMStub.superUse - BEGIN)
 

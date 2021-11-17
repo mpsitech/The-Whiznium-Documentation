@@ -15,13 +15,13 @@ Structure
 
 [//]: # (IP structure - BEGIN)
 
-&nbsp;&nbsp;&nbsp;&nbsp;\+ Capability [``[ImeIMCapability]``](#1-Capability-ImeIMCapability)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Concerned elements [``[ImeIRMCapabilityUniversal]``](#11-Concerned-elements-ImeIRMCapabilityUniversal)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;\+ Job [``[ImeIMJob]``](#2-Job-ImeIMJob)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ Block [``[ImeIMBlock]``](#21-Block-ImeIMBlock)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ Items [``[ImeIAMBlockItem]``](#211-Items-ImeIAMBlockItem)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Default value by release [``[ImeIJAMBlockItem]``](#2111-Default-value-by-release-ImeIJAMBlockItem)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Items cluster [``[ImeICAMBlockItem]``](#212-Items-cluster-ImeICAMBlockItem)
+&nbsp;&nbsp;&nbsp;&nbsp;\+ Capability [``[ImeIMCapability]``](#1-capability-imeimcapability)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Concerned elements [``[ImeIRMCapabilityUniversal]``](#11-concerned-elements-imeirmcapabilityuniversal)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;\+ Job [``[ImeIMJob]``](#2-job-imeimjob)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ Block [``[ImeIMBlock]``](#21-block-imeimblock)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ Items [``[ImeIAMBlockItem]``](#211-items-imeiamblockitem)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Default value by release [``[ImeIJAMBlockItem]``](#2111-default-value-by-release-imeijamblockitem)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Items cluster [``[ImeICAMBlockItem]``](#212-items-cluster-imeicamblockitem)
 
 [//]: # (IP structure - END)
 

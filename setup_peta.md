@@ -30,12 +30,12 @@ cd Arty-Z7-10
 petalinux-config --get-hw-description ${WHIZDEVROOT}/setup/plnx
 ```
 
-- in Kconfig showing up change the file root file system to SD card, by following _Image Packaging Configuration_ -> _Root filesystem type_ and selecting _EXT3_. _Save_ and _Exit_.
+- in Kconfig showing up change the file root file system to SD card, by following __Image Packaging Configuration__ -> __Root filesystem type__ and selecting "EXT3". __Save__ and __Exit__.
 
 To conform to the target board and to provide additional needed packages for Whiznium projects and Whiznium StarterKit in particular, it is required to overwrite ``project-spec/meta-user/recipes-bsp/device-tree/files/system-user.dtsi`` and 
 ``project-spec/meta-user/conf/user-rootfsconfig`` by the respective counterparts in ``${WHIZDEVROOT}/setup/plnx``.
 
-The changes are applied by invoking ``petalinux-config -c rootfs``, and selecting all _User packages_, followed by _Save_ and _Exit_.
+The changes are applied by invoking ``petalinux-config -c rootfs``, and selecting all __User packages__, followed by __Save__ and __Exit__.
 
 A custom driver, providing 32bit transfers across the AXI interconnect between Linux processing system (PS) and programmable logic (PL) needs to be integrated in the Linux kernel. This is achieved by generating a corresponding Kernel module
 ```

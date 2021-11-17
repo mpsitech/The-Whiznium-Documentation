@@ -3,7 +3,7 @@
 Detailed core description ``IexWdbeDcd``
 ===
 
-**NOTE: The basic/detailed core description feature is intended for future use. Modelling roughly follows the basic/detailed device description counterparts.**
+**NOTE: The basic/detailed core description feature is intended for future use. Modelling roughly follows the device description counterparts.**
 
 Schema
 ---
@@ -17,31 +17,31 @@ Structure
 
 [//]: # (IP structure - BEGIN)
 
-&nbsp;&nbsp;&nbsp;&nbsp;\- Insertion points [``[ImeIAMCoreversionIp]``](#1-Insertion-points-ImeIAMCoreversionIp)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;\- Placeholders [``[ImeIAMCoreversionPlh]``](#2-Placeholders-ImeIAMCoreversionPlh)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;\+ Module [``[ImeIMModule]``](#3-Module-ImeIMModule)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Generics cluster [``[ImeICGeneric]``](#31-Generics-cluster-ImeICGeneric)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Ports cluster [``[ImeICPort]``](#32-Ports-cluster-ImeICPort)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Signals cluster [``[ImeICSignal]``](#33-Signals-cluster-ImeICSignal)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ Controller [``[ImeIMController]``](#34-Controller-ImeIMController)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ Command [``[ImeIMCommand]``](#341-Command-ImeIMCommand)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Invocation parameters [``[ImeIAMCommandInvpar]``](#3411-Invocation-parameters-ImeIAMCommandInvpar)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Return parameters [``[ImeIAMCommandRetpar]``](#3412-Return-parameters-ImeIAMCommandRetpar)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ Error [``[ImeIMError]``](#342-Error-ImeIMError)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Parameters [``[ImeIAMErrorPar]``](#3421-Parameters-ImeIAMErrorPar)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Vector [``[ImeIMVector]``](#343-Vector-ImeIMVector)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Generic [``[ImeIMGeneric]``](#35-Generic-ImeIMGeneric)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Port [``[ImeIMPort]``](#36-Port-ImeIMPort)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ Process [``[ImeIMProcess]``](#37-Process-ImeIMProcess)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ Keys [``[ImeIAVKeylistKey]``](#371-Keys-ImeIAVKeylistKey)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Name and comment by locale [``[ImeIJAVKeylistKey]``](#3711-Name-and-comment-by-locale-ImeIJAVKeylistKey)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Variables cluster [``[ImeICVariable]``](#372-Variables-cluster-ImeICVariable)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ Finite state machine [``[ImeIMFsm]``](#373-Finite-state-machine-ImeIMFsm)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- FSM states cluster [``[ImeICFsmstate]``](#3731-FSM-states-cluster-ImeICFsmstate)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ FSM state [``[ImeIMFsmstate]``](#3732-FSM-state-ImeIMFsmstate)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Steppings [``[ImeIAMFsmstateStep]``](#37321-Steppings-ImeIAMFsmstateStep)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Variable [``[ImeIMVariable]``](#374-Variable-ImeIMVariable)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Signal [``[ImeIMSignal]``](#38-Signal-ImeIMSignal)
+&nbsp;&nbsp;&nbsp;&nbsp;\- Insertion points [``[ImeIAMCoreversionIp]``](#1-insertion-points-imeiamcoreversionip)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;\- Placeholders [``[ImeIAMCoreversionPlh]``](#2-placeholders-imeiamcoreversionplh)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;\+ Module [``[ImeIMModule]``](#3-module-imeimmodule)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Generics cluster [``[ImeICGeneric]``](#31-generics-cluster-imeicgeneric)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Ports cluster [``[ImeICPort]``](#32-ports-cluster-imeicport)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Signals cluster [``[ImeICSignal]``](#33-signals-cluster-imeicsignal)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ Controller [``[ImeIMController]``](#34-controller-imeimcontroller)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ Command [``[ImeIMCommand]``](#341-command-imeimcommand)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Invocation parameters [``[ImeIAMCommandInvpar]``](#3411-invocation-parameters-imeiamcommandinvpar)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Return parameters [``[ImeIAMCommandRetpar]``](#3412-return-parameters-imeiamcommandretpar)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ Error [``[ImeIMError]``](#342-error-imeimerror)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Parameters [``[ImeIAMErrorPar]``](#3421-parameters-imeiamerrorpar)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Vector [``[ImeIMVector]``](#343-vector-imeimvector)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Generic [``[ImeIMGeneric]``](#35-generic-imeimgeneric)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Port [``[ImeIMPort]``](#36-port-imeimport)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ Process [``[ImeIMProcess]``](#37-process-imeimprocess)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ Keys [``[ImeIAVKeylistKey]``](#371-keys-imeiavkeylistkey)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Name and comment by locale [``[ImeIJAVKeylistKey]``](#3711-name-and-comment-by-locale-imeijavkeylistkey)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Variables cluster [``[ImeICVariable]``](#372-variables-cluster-imeicvariable)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ Finite state machine [``[ImeIMFsm]``](#373-finite-state-machine-imeimfsm)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- FSM states cluster [``[ImeICFsmstate]``](#3731-fsm-states-cluster-imeicfsmstate)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ FSM state [``[ImeIMFsmstate]``](#3732-fsm-state-imeimfsmstate)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Steppings [``[ImeIAMFsmstateStep]``](#37321-steppings-imeiamfsmstatestep)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Variable [``[ImeIMVariable]``](#374-variable-imeimvariable)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Signal [``[ImeIMSignal]``](#38-signal-imeimsignal)
 
 [//]: # (IP structure - END)
 
@@ -212,7 +212,7 @@ Use:
 Column|Content|
 -|-|
 sref (string)|identifier|
-srefIxWdbeVPartype (string)|parameter data type<br>tix: vector item index<br>_bool: boolean<br>tinyint: integer / byte (8bit)<br>utinyint: unsigned integer / byte (8bit)<br>smallint: integer (16bit)<br>usmallint: unsigned integer (16bit)<br>int: integer (32bit)<br>uint: unsigned integer (32bit)<br>blob: fixed length binary large object<br>vblob: variable length bin. large. obj.|
+srefIxWdbeVPartype (string)|parameter data type<br>tix: vector item index<br>_bool: boolean<br>int8: integer / byte (8bit)<br>uint8: unsigned integer / byte (8bit)<br>int16: integer (16bit)<br>uint16: unsigned integer (16bit)<br>int32: integer (32bit)<br>uint32: unsigned integer (32bit)<br>blob: fixed length binary large object<br>vblob: variable length bin. large. obj.|
 srefRefWdbeMVector (string)|vector|
 Length (utinyint)|length|
 Defval (string)|default value|
@@ -236,7 +236,7 @@ Use:
 Column|Content|
 -|-|
 sref (string)|identifier|
-srefIxWdbeVPartype (string)|parameter data type<br>tix: vector item index<br>_bool: boolean<br>tinyint: integer / byte (8bit)<br>utinyint: unsigned integer / byte (8bit)<br>smallint: integer (16bit)<br>usmallint: unsigned integer (16bit)<br>int: integer (32bit)<br>uint: unsigned integer (32bit)<br>blob: fixed length binary large object<br>vblob: variable length bin. large. obj.|
+srefIxWdbeVPartype (string)|parameter data type<br>tix: vector item index<br>_bool: boolean<br>int8: integer / byte (8bit)<br>uint8: unsigned integer / byte (8bit)<br>int16: integer (16bit)<br>uint16: unsigned integer (16bit)<br>int32: integer (32bit)<br>uint32: unsigned integer (32bit)<br>blob: fixed length binary large object<br>vblob: variable length bin. large. obj.|
 srefRefWdbeMVector (string)|vector|
 Length (utinyint)|length|
 Comment (string)|comment|
@@ -278,7 +278,7 @@ Use:
 Column|Content|
 -|-|
 sref (string)|identifier|
-srefIxWdbeVPartype (string)|parameter data type<br>tix: vector item index<br>_bool: boolean<br>tinyint: integer / byte (8bit)<br>utinyint: unsigned integer / byte (8bit)<br>smallint: integer (16bit)<br>usmallint: unsigned integer (16bit)<br>int: integer (32bit)<br>uint: unsigned integer (32bit)<br>blob: fixed length binary large object<br>vblob: variable length bin. large. obj.|
+srefIxWdbeVPartype (string)|parameter data type<br>tix: vector item index<br>_bool: boolean<br>int8: integer / byte (8bit)<br>uint8: unsigned integer / byte (8bit)<br>int16: integer (16bit)<br>uint16: unsigned integer (16bit)<br>int32: integer (32bit)<br>uint32: unsigned integer (32bit)<br>blob: fixed length binary large object<br>vblob: variable length bin. large. obj.|
 srefRefWdbeMVector (string)|vector|
 Length (utinyint)|length|
 Comment (string)|comment|
@@ -322,7 +322,7 @@ Column|Content|
 srefIxWdbeVIop (string)|import operation<br>ins: insert<br>retrupd: retrieve and update|
 irefRefWdbeCGeneric (ubigint)|TblWdbeCGeneric|
 sref (string)|identifier|
-srefWdbeKHdltype (string)|HDL data type<br>char: character<br>int: integer<br>nat: natural<br>sl: standard logic<br>slvup: standard logic vector up<br>slvdn: standard logic vector down<br>str: string|
+srefWdbeKHdltype (string)|HDL data type<br>bit: bit<br>_bool: boolean<br>btarr: byte array<br>char: character<br>int: integer<br>nat: natural<br>ptr: pointer<br>sgn: signed<br>sl: standard logic<br>slvup: standard logic vector up<br>slvdn: standard logic vector down<br>str: string<br>usgn: unsigned|
 Width (usmallint)|width|
 Minmax (string)|range|
 Defval (string)|default value|
@@ -350,7 +350,7 @@ irefRefWdbeCPort (ubigint)|TblWdbeCPort|
 srefMdlIxVCat (string)|module<br>reset: global reset<br>clk: clock<br>rtewrp: route to wrapper signal<br>rtetop: route to top module signal<br>cmdbus: command bus<br>imb: inter-module buffer<br>rtesup: route to super module<br>rtepin: route to pin<br>dbg: debug|
 sref (string)|identifier|
 srefIxVDir (string)|direction<br>in: input<br>inout: input/output<br>out: output|
-srefWdbeKHdltype (string)|HDL data type<br>char: character<br>int: integer<br>nat: natural<br>sl: standard logic<br>slvup: standard logic vector up<br>slvdn: standard logic vector down<br>str: string|
+srefWdbeKHdltype (string)|HDL data type<br>bit: bit<br>_bool: boolean<br>btarr: byte array<br>char: character<br>int: integer<br>nat: natural<br>ptr: pointer<br>sgn: signed<br>sl: standard logic<br>slvup: standard logic vector up<br>slvdn: standard logic vector down<br>str: string<br>usgn: unsigned|
 Width (usmallint)|width|
 Minmax (string)|range|
 Defval (string)|default value|
@@ -541,7 +541,7 @@ irefRefWdbeCVariable (ubigint)|TblWdbeCVariable|
 sref (string)|identifier|
 Const (bool)|constant|
 Falling (bool)|falling edge sub-process|
-srefWdbeKHdltype (string)|HDL data type<br>char: character<br>int: integer<br>nat: natural<br>sl: standard logic<br>slvup: standard logic vector up<br>slvdn: standard logic vector down<br>str: string|
+srefWdbeKHdltype (string)|HDL data type<br>bit: bit<br>_bool: boolean<br>btarr: byte array<br>char: character<br>int: integer<br>nat: natural<br>ptr: pointer<br>sgn: signed<br>sl: standard logic<br>slvup: standard logic vector up<br>slvdn: standard logic vector down<br>str: string<br>usgn: unsigned|
 Width (usmallint)|width|
 Minmax (string)|range|
 Onval (string)|'on' value|
@@ -571,7 +571,7 @@ srefMgeIxVTbl (string)|managing entity<br>void: none<br>mdl: sub-module<br>prc: 
 srefMgeUref (string)|managing entity|
 sref (string)|identifier|
 Const (bool)|constant|
-srefWdbeKHdltype (string)|HDL data type<br>char: character<br>int: integer<br>nat: natural<br>sl: standard logic<br>slvup: standard logic vector up<br>slvdn: standard logic vector down<br>str: string|
+srefWdbeKHdltype (string)|HDL data type<br>bit: bit<br>_bool: boolean<br>btarr: byte array<br>char: character<br>int: integer<br>nat: natural<br>ptr: pointer<br>sgn: signed<br>sl: standard logic<br>slvup: standard logic vector up<br>slvdn: standard logic vector down<br>str: string<br>usgn: unsigned|
 Width (usmallint)|width|
 Minmax (string)|width|
 Comb (string)|combinatorial expression|
@@ -583,4 +583,4 @@ Comment (string)|comment|
 
 [//]: # (IP ImeIMSignal.columns - END)
 
-<small>Markdown for WhizniumDBE v1.1.3 auto-generated (what else ;-) ) by WhizniumSBE on 1 Jan 2021</small>
+<small>Markdown for WhizniumDBE v1.1.17 auto-generated (what else ;-) ) by WhizniumSBE on 14 Nov 2021</small>

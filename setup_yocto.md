@@ -14,14 +14,14 @@ A new SDK is added by adding a new _machine_ to the initialization file. For use
 
 - save the initialization file as tab-separated text ``${WHIZDEVROOT}/projects/wznm/ini/IexWznmIni.txt``
 
-- re-run the WhizniumSBE Bootstrap procedure described in the [WhizniumSBE Development Workflow](./sbe.md) document
+- re-run the _WhizniumSBE Bootstrap_ procedure described in the [WhizniumSBE Development Workflow](./sbe.md) document
 
 - log into WhizniumSBE as any user
-- in the menu _Navigation_, choose _Machines ..._
+- in the menu __Navigation__, choose __Machines ...__
 - for the ``ubuntu_plnx_wzsk``, ``ubuntu_riscv64_wzsk`` and ``ubuntu_tdx_wzsk`` machines, select them in the list view
-- in the _Machine_ menu, choose _Write initialization scripts ..._
-- on the _Writing_ tab, hit _Execute_
-- on the _File archive_ tab, hit _Download_
+- in the __Machine__ menu, choose __Write initialization scripts ...__
+- on the __Writing__ tab, hit __Execute__
+- on the __File archive__ tab, hit __Download__
 - unpack the downloaded archives into ``${WHIZDEVROOT}/init/ubuntu_plnx_wzsk``, ``ubuntu_riscv64_wzsk`` and ``ubuntu_tdx_wzsk``, respectively
 
 ## Installing prerequisites
@@ -213,14 +213,14 @@ Setting up Whiznium within a newly-built SDK is mostly equivalent to the procedu
 
 A single script, ``${WHIZDEVROOT}/setup/base/setup_base_yocto.sh`` performs the required actions for all three reference targets currently supported, Embedded Linux (Toradex Apalis i.MX6 / _tdx), FPGA (Digilent Arty Zynq / _plnx) and RISC-V (Microchip Icicle PolarFire SoC / _riscv).
 
-The setup script can now be executed using:
+The setup script can be executed using:
 ```
 cd ${WHIZDEVROOT}/setup/base
 chmod 755 setup_base_yocto.sh
 ./setup_base_yocto.sh
 ```
 
-When prompted for the path to the initialization script folder and for the machine postfix, keep the defaults.
+When prompted, adapt the path to the initialization script folder and for the machine postfix, the defaults are for the _tdx target.
 
 ## Bulk-copying the Whiznium folder to the SD card
 

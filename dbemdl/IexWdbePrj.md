@@ -64,7 +64,7 @@ Column|Content|
 Major (usmallint)|major version number|
 Minor (usmallint)|minor version number|
 Sub (usmallint)|sub version number|
-srefIxVState (string)|state<br>newcre: newly created<br>newimp: newly imported<br>dsnbscdd: design phase, basic device description imported<br>ready: build-ready<br>abandon: abandonned|
+srefIxVState (string)|state<br>newcre: newly created<br>newimp: newly imported<br>dsnmdlstr: design phase, modular structure imported<br>dsncmdset: design phase, command set imported<br>dsndflalg: design phase, data flows and algorithms imported<br>dsngenfst: design phase, fine structure generated<br>dsncustfst: design phase, custom fine structure applied<br>ready: build-ready<br>abandon: abandonned|
 About (string)|about text|
 Comment (string)|comment|
 
@@ -84,7 +84,7 @@ Use: detail the time-dependent state of the version.
 
 Column|Content|
 -|-|
-srefIxVState (string)|state<br>newcre: newly created<br>newimp: newly imported<br>dsnbscdd: design phase, basic device description imported<br>ready: build-ready<br>abandon: abandonned|
+srefIxVState (string)|state<br>newcre: newly created<br>newimp: newly imported<br>dsnmdlstr: design phase, modular structure imported<br>dsncmdset: design phase, command set imported<br>dsndflalg: design phase, data flows and algorithms imported<br>dsngenfst: design phase, fine structure generated<br>dsncustfst: design phase, custom fine structure applied<br>ready: build-ready<br>abandon: abandonned|
 
 [//]: # (IP ImeIJMVersionState.columns - END)
 
@@ -147,4 +147,4 @@ srefKFunction (string)|function<br>mgr: manager<br>heng: hardware engineer<br>se
 
 [//]: # (IP ImeIRMPersonMProject.columns - END)
 
-<small>Markdown for WhizniumDBE v1.1.3 auto-generated (what else ;-) ) by WhizniumSBE on 1 Jan 2021</small>
+<small>Markdown for WhizniumDBE v1.1.17 auto-generated (what else ;-) ) by WhizniumSBE on 14 Nov 2021</small>
