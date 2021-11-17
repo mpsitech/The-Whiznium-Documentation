@@ -23,8 +23,8 @@ To ensure maximum flexibility for both single-user and shared development enviro
 - obtain the latest Whiznium package, available from aws s3
 ```
 cd /home/<username>/whiznium_dev
-wget https://content.mpsitech.cloud/wznm_v1.1.6_wdbe_v1.1.17.tgz
-tar xzf wznm_v1.1.6_wdbe_v1.1.17.tgz
+wget https://content.mpsitech.cloud/wznm_v1.1.7_wdbe_v1.1.17.tgz
+tar xzf wznm_v1.1.7_wdbe_v1.1.17.tgz
 ```
 
 - in ``init/ubuntu/init.sh``, adapt the path variables; for the reference installation, only replace ``username`` by the actual username
