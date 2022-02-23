@@ -20,6 +20,10 @@ Launch Libero SoC and perform the following steps for setting up the IP project:
 
 Some VHDL modules are instantiated as black boxes and require configuration from the Microchip IP catalog. All configuration in this section takes place in the __Catalog__ tab.
 
+The MIPI stuff:
+
+TBD
+
 The clock conditioning circuit for use in ``Top.vhd`` is configured as follows:
 
 - select __Clock & Management__ -> __Clock Conditioning Circuitry (CCC)__
@@ -67,6 +71,7 @@ Synthesizing the design ensures no errors are present, simplifying debugging of 
 
 Make sure the many AXI-related ports are identified as one single bus:
 
+TBD: first invocation is __Create Core from HDL ...__
 - in __Design Hierarchy__, right-click on the topmost "Iccl_ip_v1_0_S_AXI" module and select __Edit Core Definition__
 - click __Add/Edit bus interfaces ...__
 - click __Add Bus Interface...__, select "AXI4, slave" and click __OK__

@@ -56,7 +56,11 @@ Note: you are free to use this documentation offline by cloning it and use e.g. 
 
 &nbsp;&nbsp;[Creating The Whiznium StarterKit Device Simplicity Studio Solution From Scratch](./wskdsln_splcty.md)
 
-Last update: November 16, 2021.
+## Experimental features
+
+[Vue.js User Interfaces](./vuejs.md)
+
+Last update: February 23, 2022.
 
 ---
 

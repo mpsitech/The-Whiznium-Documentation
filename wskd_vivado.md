@@ -15,7 +15,7 @@ Launch Vivado and perform the following steps for setting up the block design pr
 - in __Quick Start__, select __Create Project >__, then click __Next >__ on the __New Project__ dialog
 - on the __Project Name__ tab, choose "wskd" as __Project name__ and ``/home/mpsitech/fpgacode`` as __Project location__; hit __Next >__ three times
 - on the __Add Constraints__ tab, click __Add Files__ and navigate to ``${WHIZDEVROOT}/rep/wskd/fpgawskd/arty``, then select ``Arty.xdc``, click __OK__, then __Next >__
-- on the __Default Part__ tab, either select the __Part__ "xc7z020clg400-1" or the __Board__ "Arty Z7-20", hit __Next >__ then __Finish__
+- on the __Default Part__ tab, select __Board__ "Arty Z7-20" (choosing the part "xc7z020clg400-1" only will result configuration problems), hit __Next >__ then __Finish__
 - click on __Create Block Design__, then __OK__
 - on the canvas, hit __+__
 - double-click on __ZYNQ7 Processing System__, then on __Run Block Automation__ and __OK__

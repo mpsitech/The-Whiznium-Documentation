@@ -25,12 +25,12 @@ source /opt/Xilinx/petalinux-v2020.1/settings.sh
 
 - create a PetaLinux project and configure it with the current Whiznium StarterKit Device (_wskd_) FPGA bit file:
 ```
-petalinux-create --type project --template zynq --name Arty-Z7-10
-cd Arty-Z7-10
+petalinux-create --type project --template zynq --name Arty-Z7-20
+cd Arty-Z7-20
 petalinux-config --get-hw-description ${WHIZDEVROOT}/setup/plnx
 ```
 
-- in Kconfig showing up change the file root file system to SD card, by following __Image Packaging Configuration__ -> __Root filesystem type__ and selecting "EXT3". __Save__ and __Exit__.
+- in Kconfig showing up change the file root file system to SD card, by following __Image Packaging Configuration__ -> __Root filesystem type__ and selecting "EXT4". __Save__ and __Exit__.
 
 To conform to the target board and to provide additional needed packages for Whiznium projects and Whiznium StarterKit in particular, it is required to overwrite ``project-spec/meta-user/recipes-bsp/device-tree/files/system-user.dtsi`` and 
 ``project-spec/meta-user/conf/user-rootfsconfig`` by the respective counterparts in ``${WHIZDEVROOT}/setup/plnx``.
@@ -52,7 +52,7 @@ petalinux-build
 The procedure may take several hours with the final output reading something like this:
 
 ```
-mpsitech@josh:~/emb/plnx/wzsk/Arty-Z7-10$ petalinux-build
+mpsitech@josh:~/emb/plnx/wzsk/Arty-Z7-20$ petalinux-build
 INFO: sourcing build tools
 [INFO] building project
 [INFO] sourcing build environment
@@ -63,7 +63,7 @@ WARNING: Host distribution "ubuntu-20.04" has not been validated with this versi
 Parsing recipes: 100% |###############################################################################################################| Time: 0:02:20
 Parsing of 2962 .bb files complete (0 cached, 2962 parsed). 4231 targets, 189 skipped, 0 masked, 0 errors.
 NOTE: Resolving any missing task queue dependencies
-NOTE: Fetching uninative binary shim from file:///home/mpsitech/emb/plnx/wzsk/Arty-Z7-10/components/yocto/downloads/uninative/9498d8bba047499999a7310ac2576d0796461184965351a56f6d32c888a1f216/x86_64-nativesdk-libc.tar.xz;sha256sum=9498d8bba047499999a7310ac2576d0796461184965351a56f6d32c888a1f216
+NOTE: Fetching uninative binary shim from file:///home/mpsitech/emb/plnx/wzsk/Arty-Z7-20/components/yocto/downloads/uninative/9498d8bba047499999a7310ac2576d0796461184965351a56f6d32c888a1f216/x86_64-nativesdk-libc.tar.xz;sha256sum=9498d8bba047499999a7310ac2576d0796461184965351a56f6d32c888a1f216
 WARNING: Your host glibc verson (2.31) is newer than that in uninative (2.30). Disabling uninative so that sstate is not corrupted.
 Initialising tasks: 100% |############################################################################################################| Time: 0:00:03
 Checking sstate mirror object availability: 100% |####################################################################################| Time: 0:00:21
@@ -105,10 +105,12 @@ sudo cp images/linux/boot.scr /mnt/emb_boot/
 sudo cp images/linux/image.ub /mnt/emb_boot/
 ```
 
+<!--
 The Cora Z7 board does not come with an EEPROM to store its MAC address. Rather, the address can be found printed on a sticker on its backside. To make sure the board presents its correct MAC address to the network, it needs to be specified in the file ``${WHIZDEVROOT}/setup/plnx/uEnv.txt`` before being copied to the boot partition using
 ```
 sudo cp ${WHIZDEVROOT}/setup/plnx/uEnv.txt /mnt/emb_boot/
 ```
+-->
 
 ## Writing the root file system
 

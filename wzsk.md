@@ -4,7 +4,7 @@
 
 Building the Whiznium StarterKit project (developed using WhizniumSBE) is straightforward. It involves (cross-)compilation of the sources for the C++ SQLite database access library ``dbswzsk`` and the C++ _combined daemon_ ``wzskcmbd``. The compilation results, along with the web-based UI files and a customized preferences file are then deployed on the target.
 
-A single script, ``${WHIZDEVROOT}/setup/wzsk/setup_wzsk_yocto.sh`` performs the required actions for the currently four reference targets, Embedded Linux (Toradex Apalis i.MX6 / _tdx), FPGA (Digilent Arty Zynq / _plnx), RISC-V (Microchip Icicle PolarFire SoC / _riscv) and workstation (SiLabs Universal Bee / _ubuntu).
+A single script, ``${WHIZDEVROOT}/setup/wzsk/setup_wzsk.sh`` performs the required actions for the currently four reference targets, Embedded Linux (Toradex Apalis i.MX6 / _tdx), FPGA (Digilent Arty Zynq / _plnx), RISC-V (Microchip Icicle PolarFire SoC / _riscv) and workstation (SiLabs Universal Bee / _ubuntu).
 
 The setup script can be executed using:
 ```

@@ -25,6 +25,14 @@ The mixed-mode clock manager for use in ``Top.vhd`` is configured as follows:
 - also de-dselect the __locked__ optional output
 - finalize by hitting __OK__
 
+The MIPI-CSI receiver for use in ``Camacq.vhd`` is configured as follows:
+
+- select __FPGA Features and Design__ -> __IO Interfaces__ -> __SelectIO Interface Wizard__
+- set __Component Name__ to "Mipirx_w2"
+- in __Data Bus Setup__, choose __Data Rate__ "DDR", select __Serialization Factor__ and set it to 8
+- additionally, choose __External Data Width__ 2 and __Type__ "Differential" with __Standard__ "LVDS 25"
+
+
 The dual-port BlockRAM's for use in ``Camacq.vhd`` and ``Featdet.vhd`` are configured as follows:
 
 - select __Memories & Storage Elements__ -> __RAMs & ROMs & BRAM__ -> __Block Memory Generator__
@@ -55,7 +63,7 @@ Adders are configured as follows:
 Repeat the procedure for the remaining three adder types of the project:
 
 - for "Add_a23b21s23", in __Basic__, __A Input Width__ to 23, __B Input Width__ to 21 and __Output Witdh__ to 23; else, as above
-- for "Add_a21b21s22", in __Basic__, __A/B Input Width__ to 22 and __Output Witdh__ to 23; else, as above
+- for "Add_a21b21s22", in __Basic__, __A/B Input Width__ to 21 and __Output Witdh__ to 22; else, as above
 - for "Add_a22b22s23", in __Basic__, __A/B Input Width__ to 22 and __Output Witdh__ to 23; else, as above
 
 Multipliers are configured as follows:
