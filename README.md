@@ -60,7 +60,9 @@ Note: you are free to use this documentation offline by cloning it and use e.g. 
 
 [Vue.js User Interfaces](./vuejs.md)
 
-Last update: February 23, 2022.
+[Setting Up The Vue.js CLI For Use With Whiznium StarterKit](./wzsk_vuecli.md)
+
+Last update: February 28, 2022.
 
 ---
 
