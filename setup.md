@@ -66,7 +66,7 @@ This simple test serves as a quick validation for the setup, ensuring that every
 
 - for Mac, specify the dynamic library path
 ```
-export set DYLD_LIBRARY_PATH=/Users/mpsitech/whiznium_sdk/lib:/opt/homebrew/lib:/opt/homebrew/opt/libmicrohttpd/lib:/opt/homebrew/opt/libxml2/lib:/usr/local/mysql/lib
+export set DYLD_LIBRARY_PATH=${WHIZSDKROOT}/lib:/opt/homebrew/lib:/opt/homebrew/opt/libmicrohttpd/lib:/opt/homebrew/opt/libxml2/lib:/usr/local/mysql/lib
 ```
 
 - run the application from command line
