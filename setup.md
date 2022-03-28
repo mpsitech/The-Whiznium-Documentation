@@ -16,6 +16,16 @@ To ensure maximum flexibility for both single-user and shared development enviro
 
 - the deployment folder ``${WHIZROOT}`` (in this reference installation to be found at ``/home/<username>/whiznium``, Mac: ``/Users/<username>/whiznium``) contains the binary results of Whiznium projects after build along with eventual XML preferences files. For cross-compilation scenarios, contents of this folder would need to be duplicated onto the target Embedded Linux system.
 
+## Mac only: install MySQL
+
+The Mac setup relies on MySQL Community Server, the tested version is 8.0.28 for ARM 64-bit.
+
+- navigate to ``https://dev.mysql.com/downloads/mysql/`` and download the apprpriate DMG archive
+
+- follow the installation procedure keeping the defaults, choose any root password
+
+-  when asked about the __Authentication Method__, make sure to select __Use Legacy Authentication Method__
+
 ## Obtaining and setting up the folder structure
 
 - create the directories ``/home/<username>/whiznium_dev``, ``/home/<username>/whiznium`` and ``/home/<username>/whiznium_sdk`` or whichever combination of ``${WHIZDEVROOT}``, ``${WHIZSDKROOT}`` and ``${WHIZROOT}`` have been chosen
