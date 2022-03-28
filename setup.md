@@ -22,7 +22,7 @@ For management of Unix-style packages, Homebrew is used, which is not part of th
 
 - follow the instructions on ``https://brew.sh`` for installation
 
-The Mac setup relies on MySQL Community Server, the tested version is 8.0.28 for ARM 64-bit.
+The Mac setup relies on MySQL Community Server, the tested version is 8.0.28 for ARM 64-bit
 
 - navigate to ``https://dev.mysql.com/downloads/mysql/`` and download the apprpriate DMG archive
 
