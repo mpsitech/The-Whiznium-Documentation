@@ -23,7 +23,7 @@ npm install axios@0.21.4
 npm install vue-axios@3.4.0
 npm install vue-cli-plugin-axios@0.0.4
 npm install vuetify@2.6.1
-vue add vue-axios
+vue add axios
 vue add vuetify
 ```
 
@@ -56,7 +56,19 @@ Now, Chrome should show the the Whiznium StarterKit Vue.js app when navigating t
 
 ## Deployment
 
-Webpack transpilation for deployment is achieved using the command ``npm run build`` which places its results in the ``dist`` sub-folder.
+For deployment, Webpack transpilation is required:
+
+- modify ``${WHIZROOT}/web/vueappwzsk/vue.config.js`` so that the ``module.exports`` section reads
+```
+module.exports = {
+  publicPath: '/web/',
+  transpileDependencies: [
+    'vuetify'
+  ]
+}
+```
+
+- run ``npm run build`` which places its results in the ``dist`` sub-folder
 
 - quit ``Wzskcmbd``
 
