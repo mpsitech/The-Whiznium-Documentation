@@ -41,6 +41,10 @@ wget https://content.mpsitech.cloud/wznm_v1.1.9_wdbe_v1.1.20.tgz
 tar xzf wznm_v1.1.9_wdbe_v1.1.20.tgz
 ```
 
+<mark>NOTE that as of June 2024, a new package, compatibie with the most up-to-date WhizniumSBE and WhizniumDBE versions (2024.6-prerelease branch) is available at https://content.mpsitech.cloud/wznm_v1.1.9-2_wdbe_v1.1.41.tgz</mark>
+
+<mark>Corresponding updates to this documentation and to the starter kit code can be expected to be released by June 30, 2024</mark>
+
 - in ``init/ubuntu/init.sh`` (Mac: ``init/mac/init.sh``), adapt the path variables; for the reference installation, only replace ``username`` by the actual username
 
 - run basic setup; this script prompts the path to the Whiznium initialization script edited in the previous step and subsequently installs dependencies, sets up MariaDB (Mac: MySQL) for use with Whiznium and builds the Whiznium essentials. The latter comprise the sbecore and dbecore libraries along with the _WhizniumSBE Engine Monitor_ project:

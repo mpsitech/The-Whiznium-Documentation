@@ -35,8 +35,13 @@ The MIPI-CSI receiver for use in ``Camacq.vhd`` is configured as follows:
 
 The dual-port BlockRAM's for use in ``Camacq.vhd`` and ``Featdet.vhd`` are configured as follows:
 
+Spbram_size2kB_w8
+Spbram_size4kB_w8
+
+Dpbram_size2kB_a8b8
+
 - select __Memories & Storage Elements__ -> __RAMs & ROMs & BRAM__ -> __Block Memory Generator__
-- set __Component Name__ to "Dpbram_size58kB"
+- set __Component Name__ to "Dpbram_size58kB_a8b32"
 - in __Basic__, set the __Memory Type__ to "True Dual Port RAM"
 - in __Port A Options__, set __Write/Read Width__ to 8 and __Write/Read Depth__ to 59392
 - additionally, select __Primitives Output Register__
@@ -44,7 +49,7 @@ The dual-port BlockRAM's for use in ``Camacq.vhd`` and ``Featdet.vhd`` are confi
 - additionally, de-select the __Primitives Output Register__
 - finalize by hitting __OK__
 
-Repeat the procedure for "Dpbram_size96kB":
+Repeat the procedure for "Dpbram_size96kB_a8b32":
 
 - in __Port A Options__, set __Write/Read Depth__ to 98304
 - additionally, de-select __Primitives Output Register__
