@@ -41,9 +41,9 @@ wget https://content.mpsitech.cloud/wznm_v1.1.9_wdbe_v1.1.20.tgz
 tar xzf wznm_v1.1.9_wdbe_v1.1.20.tgz
 ```
 
-<mark>NOTE that as of June 2024, a new package, compatibie with the most up-to-date WhizniumSBE and WhizniumDBE versions (2024.6-prerelease branch) is available at https://content.mpsitech.cloud/wznm_v1.1.9-2_wdbe_v1.1.41.tgz</mark>
+<mark>NOTE that as of March 2025, a new package, compatibie with the most up-to-date WhizniumSBE and WhizniumDBE versions (2025.1-prerelease branch) is available at https://content.mpsitech.cloud/wznm_v1.1.13_wdbe_v1.1.44.tgz</mark>
 
-<mark>Corresponding updates to this documentation and to the starter kit code can be expected to be released by June 30, 2024</mark>
+<mark>Corresponding updates to this documentation and to the starter kit code can be expected to be released by June 30, 2025</mark>
 
 - in ``init/ubuntu/init.sh`` (Mac: ``init/mac/init.sh``), adapt the path variables; for the reference installation, only replace ``username`` by the actual username
 
