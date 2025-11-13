@@ -1,6 +1,8 @@
 # The Whiznium Documentation
 
-Note: you are free to use this documentation offline by cloning it and use e.g. VSCode for Markdown rendering.
+<mark>NOTE that as of November 2025, most original (2021/-22) instructions concerning the Whiznium StarterKit are deprecated. The new home for the Whiznium Computer Vision Demonstrator can be found [here (github.io)](https://mpsitech.github.io/Whiznium-CV-Demonstrator).</mark>
+
+Feel free to use this documentation offline by cloning it and use e.g. VSCode for Markdown rendering.
 
 ## General topics
 
@@ -8,15 +10,15 @@ Note: you are free to use this documentation offline by cloning it and use e.g. 
 
 [Setting Up WhizniumSBE and WhizniumDBE On Your Workstation](./setup_sbedbe.md)
 
-[Setting Up A New Yocto SDK For Use With Whiznium](./setup_yocto.md)
+[Setting Up A New Yocto SDK For Use With Whiznium (deprecated)](./setup_yocto.md)
 
-[Setting Up A New PetaLinux SDK For Use With Whiznium](./setup_peta.md)
+[Setting Up A New PetaLinux SDK For Use With Whiznium (deprecated)](./setup_peta.md)
 
-[Setting Up A New PolarFire SoC Yocto SDK For Use With Whiznium](./setup_riscv.md)
-
-<!-- [Working With Cloud-based Whiznium (WaaS)](./whiz_cloud.md) -->
+[Setting Up A New PolarFire SoC Yocto SDK For Use With Whiznium (deprecated)](./setup_riscv.md)
 
 ## WhizniumSBE topics
+
+<mark>NEW home for the WhizniumSBE Reference [here (github.io)](https://mpsitech.github.io/The-WhizniumSBE-Reference).</mark>
 
 [WhizniumSBE Development Workflow](./sbe.md)
 
@@ -30,6 +32,8 @@ Note: you are free to use this documentation offline by cloning it and use e.g. 
 
 ## WhizniumDBE topics
 
+<mark>NEW home for the WhizniumDBE Reference [here (github.io)](https://mpsitech.github.io/The-WhizniumDBE-Reference).</mark>
+
 [WhizniumDBE Development Workflow](./dbe.md)
 
 [WhizniumDBE-Backed Project Source Code Organization](./dbeincl.md)
@@ -42,19 +46,19 @@ Note: you are free to use this documentation offline by cloning it and use e.g. 
 
 ## Whiznium StarterKit topics
 
-[Setting Up The Whiznium StarterKit Project](./wzsk.md)
+[Setting Up The Whiznium StarterKit Project (deprecated)](./wzsk.md)
 
-[Running The Vivado Design Flow For Whiznium StarterKit Device](./wskd_vivado.md)
+[Running The Vivado Design Flow For Whiznium StarterKit Device (deprecated)](./wskd_vivado.md)
 
-&nbsp;&nbsp;[Creating The Whiznium StarterKit Device Vivado IP From Scratch](./wskdip_vivado.md)
+&nbsp;&nbsp;[Creating The Whiznium StarterKit Device Vivado IP From Scratch (deprecated)](./wskdip_vivado.md)
 
-[Running The Libero SoC Design Flow For Whiznium StarterKit Device](./wskd_libero.md)
+[Running The Libero SoC Design Flow For Whiznium StarterKit Device (deprecated)](./wskd_libero.md)
 
-&nbsp;&nbsp;[Creating The Whiznium StarterKit Device Libero SoC IP From Scratch](./wskdip_libero.md)
+&nbsp;&nbsp;[Creating The Whiznium StarterKit Device Libero SoC IP From Scratch (deprecated)](./wskdip_libero.md)
 
-[Running The Simplicity Studio Design Flow For Whiznium StarterKit Device](./wskd_splcty.md)
+[Running The Simplicity Studio Design Flow For Whiznium StarterKit Device (deprecated)](./wskd_splcty.md)
 
-&nbsp;&nbsp;[Creating The Whiznium StarterKit Device Simplicity Studio Solution From Scratch](./wskdsln_splcty.md)
+&nbsp;&nbsp;[Creating The Whiznium StarterKit Device Simplicity Studio Solution From Scratch (deprecated)](./wskdsln_splcty.md)
 
 ## Experimental features
 
@@ -62,7 +66,7 @@ Note: you are free to use this documentation offline by cloning it and use e.g. 
 
 [Setting Up The Vue.js CLI For Use With Whiznium StarterKit](./wzsk_vuecli.md)
 
-Last update: February 28, 2022.
+Last update: November 13, 2025.
 
 ---
 
