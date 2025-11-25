@@ -37,8 +37,8 @@ The Mac setup relies on MySQL Community Server, the tested version is 8.0.28 for
 - obtain the latest Whiznium package, available from aws s3
 ```
 cd /home/<username>/whiznium_dev
-wget https://content.mpsitech.cloud/wznm_v1.1.15_wdbe_v1.1.49.tgz
-tar xzf wznm_v1.1.15_wdbe_v1.1.49.tgz
+wget https://content.mpsitech.cloud/wznm_v1.1.15_wdbe_v1.1.50.tgz
+tar xzf wznm_v1.1.15_wdbe_v1.1.50.tgz
 ```
 
 - in ``init/ubuntu/init.sh`` (Mac: ``init/mac/init.sh``), adapt the path variables; for the reference installation, only replace ``username`` by the actual username
