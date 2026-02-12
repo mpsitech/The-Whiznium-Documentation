@@ -41,6 +41,19 @@ wget https://content.mpsitech.cloud/wznm_v1.1.15_wdbe_v1.1.50.tgz
 tar xzf wznm_v1.1.15_wdbe_v1.1.50.tgz
 ```
 
+> Retired Whiznium packages as referenced e.g. in Whiznium Knowledge Base articles:<br>
+> <a href="https://content.mpsitech.cloud/wznm_v1.1.3_wdbe_v1.1.3.tgz" target="_blank">wznm_v1.1.3_wdbe_v1.1.3.tgz</a>, 
+> <a href="https://content.mpsitech.cloud/wznm_v1.1.4_wdbe_v1.1.4.tgz" target="_blank">wznm_v1.1.4_wdbe_v1.1.4.tgz</a>, 
+> <a href="https://content.mpsitech.cloud/wznm_v1.1.5_wdbe_v1.1.5.tgz" target="_blank">wznm_v1.1.5_wdbe_v1.1.5.tgz</a>, 
+> <a href="https://content.mpsitech.cloud/wznm_v1.1.6_wdbe_v1.1.17.tgz " target="_blank">wznm_v1.1.6_wdbe_v1.1.17.tgz </a>, 
+> <a href="https://content.mpsitech.cloud/wznm_v1.1.7_wdbe_v1.1.17.tgz" target="_blank">wznm_v1.1.7_wdbe_v1.1.17.tgz</a>, 
+> <a href="https://content.mpsitech.cloud/wznm_v1.1.8_wdbe_v1.1.18.tgz" target="_blank">wznm_v1.1.8_wdbe_v1.1.18.tgz</a>, 
+> <a href="https://content.mpsitech.cloud/wznm_v1.1.9_wdbe_v1.1.20.tgz" target="_blank">wznm_v1.1.9_wdbe_v1.1.20.tgz</a>, 
+> <a href="https://content.mpsitech.cloud/wznm_v1.1.13_wdbe_v1.1.44.tgz" target="_blank">wznm_v1.1.13_wdbe_v1.1.44.tgz</a>, 
+> <a href="https://content.mpsitech.cloud/wznm_v1.1.15_wdbe_v1.1.49.tgz" target="_blank">wznm_v1.1.15_wdbe_v1.1.49.tgz</a>, 
+> <a href="https://content.mpsitech.cloud/wznm_v1.1.15_wdbe_v1.1.50.tgz" target="_blank">wznm_v1.1.15_wdbe_v1.1.50.tgz</a>, 
+> <a href="https://content.mpsitech.cloud/wznm_v1.1.16_wdbe_v1.1.51.tgz" target="_blank">wznm_v1.1.16_wdbe_v1.1.51.tgz</a>
+
 - in ``init/ubuntu/init.sh`` (Mac: ``init/mac/init.sh``), adapt the path variables; for the reference installation, only replace ``username`` by the actual username
 
 - run basic setup; this script prompts the path to the Whiznium initialization script edited in the previous step and subsequently installs dependencies, sets up MariaDB (Mac: MySQL) for use with Whiznium and builds the Whiznium essentials. The latter comprise the sbecore and dbecore libraries along with the _WhizniumSBE Engine Monitor_ project:
