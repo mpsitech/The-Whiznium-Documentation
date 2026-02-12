@@ -1,6 +1,6 @@
 # The Whiznium Documentation
 
-<mark>NOTE that as of February 2026, most original (2021/-22) instructions concerning the Whiznium StarterKit are deprecated. The new home for all how-to's and technological deep dives on the Whiznium Computer Vision Demonstrator and more can be found <a href="https://mpsitech.github.io/Whiznium-Knowledge-Base" target="_blank">here (github.io)</a>.</mark>
+<mark>NOTE that as of February 2026, most original (2021/-22) instructions concerning the Whiznium StarterKit are deprecated. The new home for all how-to's and technological deep dives on the Whiznium Computer Vision Demonstrator and more can be found <a href="https://mpsitech.github.io/Whiznium-Knowledge-Base" target="_blank" rel="noopener noreferrer">here (github.io)</a>.</mark>
 
 Feel free to use this documentation offline by cloning it and use e.g. VSCode for Markdown rendering.
 
@@ -18,7 +18,7 @@ Feel free to use this documentation offline by cloning it and use e.g. VSCode fo
 
 ## WhizniumSBE topics
 
-<mark>NEW home for the WhizniumSBE Reference <a href="https://mpsitech.github.io/The-WhizniumSBE-Reference" target="_blank">here (github.io)</a>.</mark>
+<mark>NEW home for the WhizniumSBE Reference <a href="https://mpsitech.github.io/The-WhizniumSBE-Reference" target="_blank" rel="noopener noreferrer">here (github.io)</a>.</mark>
 
 [WhizniumSBE Development Workflow](./sbe.md)
 
@@ -32,7 +32,7 @@ Feel free to use this documentation offline by cloning it and use e.g. VSCode fo
 
 ## WhizniumDBE topics
 
-<mark>NEW home for the WhizniumDBE Reference <a href="https://mpsitech.github.io/The-WhizniumDBE-Reference" target="_blank">here (github.io)</a>.</mark>
+<mark>NEW home for the WhizniumDBE Reference <a href="https://mpsitech.github.io/The-WhizniumDBE-Reference" target="_blank" rel="noopener noreferrer">here (github.io)</a>.</mark>
 
 [WhizniumDBE Development Workflow](./dbe.md)
 
