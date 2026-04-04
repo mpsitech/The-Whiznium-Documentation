@@ -37,8 +37,8 @@ The Mac setup relies on MySQL Community Server, the tested version is 8.0.28 for
 - obtain the latest Whiznium package, available from aws s3
 ```
 cd /home/<username>/whiznium_dev
-wget https://content.mpsitech.cloud/wznm_v1.1.15_wdbe_v1.1.50.tgz
-tar xzf wznm_v1.1.15_wdbe_v1.1.50.tgz
+wget https://content.mpsitech.cloud/wznm_v1.1.19_wdbe_v1.1.51.tgz
+tar xzf wznm_v1.1.19_wdbe_v1.1.51.tgz
 ```
 
 > Retired Whiznium packages as referenced e.g. in Whiznium Knowledge Base articles:<br>
@@ -52,7 +52,6 @@ tar xzf wznm_v1.1.15_wdbe_v1.1.50.tgz
 > <a href="https://content.mpsitech.cloud/wznm_v1.1.13_wdbe_v1.1.44.tgz" target="_blank">wznm_v1.1.13_wdbe_v1.1.44.tgz</a>, 
 > <a href="https://content.mpsitech.cloud/wznm_v1.1.15_wdbe_v1.1.49.tgz" target="_blank">wznm_v1.1.15_wdbe_v1.1.49.tgz</a>, 
 > <a href="https://content.mpsitech.cloud/wznm_v1.1.15_wdbe_v1.1.50.tgz" target="_blank">wznm_v1.1.15_wdbe_v1.1.50.tgz</a>, 
-> <a href="https://content.mpsitech.cloud/wznm_v1.1.16_wdbe_v1.1.51.tgz" target="_blank">wznm_v1.1.16_wdbe_v1.1.51.tgz</a>
 
 - in ``init/ubuntu/init.sh`` (Mac: ``init/mac/init.sh``), adapt the path variables; for the reference installation, only replace ``username`` by the actual username
 

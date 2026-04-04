@@ -23,7 +23,7 @@ chmod 755 setup_wznm.sh
 ```
 cd ${WHIZROOT}/bin/wznmd
 openssl genrsa -out server.key 4096
-openssl req -days 365 -out server.pem -new -x509 -key server.key
+openssl req -days 365 -out server.crt -new -x509 -key server.key
 ```
 Note that clients will get confused when different applications (such as WhizniumDBE) on the same computer try using a different key - thus, if you already have certificate and key for your machine, just copy the files into ``${WHIZROOT}/bin/wznmd``.
 
