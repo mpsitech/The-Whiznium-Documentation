@@ -2,7 +2,7 @@
 
 # Setting Up Whiznium On Your Workstation
 
-The following instructions have been tested on a Linux workstation running ubuntu 20.04, and on an M1 Mac running macOS 12.1.
+The following instructions have been tested on a Linux workstation running ubuntu 24.04, and on an M1 Mac running macOS 26.2.
 
 ## Overview
 

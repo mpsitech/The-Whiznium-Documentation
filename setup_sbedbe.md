@@ -2,7 +2,7 @@
 
 # Setting Up WhizniumSBE On Your Workstation
 
-The following instructions have been tested on a Linux workstation running ubuntu 20.04, and on an M1 Mac running macOS 12.1.
+The following instructions have been tested on a Linux workstation running ubuntu 24.04, and on an M1 Mac running macOS 26.2.
 
 It is assumed that for ``${WHIZDEVROOT}``, ``${WHIZSDKROOT}`` and ``${WHIZROOT}``, ``/home/<username>/whiznium_dev``, ``/home/<username>/whiznium`` and ``/home/<username>/whiznium_sdk``, respectively, have been chosen (Mac: ``/home/<username>`` is replaced by ``/Users/<username>``).
 
