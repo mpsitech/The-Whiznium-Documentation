@@ -18,7 +18,7 @@ Feel free to use this documentation offline by cloning it and use e.g. VSCode fo
 
 ## WhizniumSBE topics
 
-<mark>NEW home for the WhizniumSBE Reference <a href="https://mpsitech.github.io/The-WhizniumSBE-Reference" target="_blank" rel="noopener noreferrer">here (github.io)</a>.</mark>
+<mark>NEW home for the WhizniumSBE Reference <a href="https://mpsitech.github.io/The-WhizniumSBE-Reference" target="_blank" rel="noopener noreferrer">here (GitHub pages)</a>.</mark>
 
 [WhizniumSBE Development Workflow](./sbe.md)
 
@@ -32,7 +32,7 @@ Feel free to use this documentation offline by cloning it and use e.g. VSCode fo
 
 ## WhizniumDBE topics
 
-<mark>NEW home for the WhizniumDBE Reference <a href="https://mpsitech.github.io/The-WhizniumDBE-Reference" target="_blank" rel="noopener noreferrer">here (github.io)</a>.</mark>
+<mark>NEW home for the WhizniumDBE Reference <a href="https://mpsitech.github.io/The-WhizniumDBE-Reference" target="_blank" rel="noopener noreferrer">here (GitHub pages)</a>.</mark>
 
 [WhizniumDBE Development Workflow](./dbe.md)
 
