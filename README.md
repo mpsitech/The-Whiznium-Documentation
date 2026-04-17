@@ -1,6 +1,6 @@
 # The Whiznium Documentation
 
-<mark>NOTE that as of February 2026, most original (2021/-22) instructions concerning the Whiznium StarterKit are deprecated. The new home for all how-to's and technological deep dives on the Whiznium Computer Vision Demonstrator and more is the Whiznium Knowledge Base . It can be found <a href="https://mpsitech.github.io/Whiznium-Knowledge-Base" target="_blank" rel="noopener noreferrer">here (GitHub pages)</a>.</mark>
+<mark>NOTE that as of February 2026, most original (2021/-22) instructions concerning the Whiznium StarterKit are deprecated. The new home for all how-to's and technological deep dives on the Whiznium Computer Vision Demonstrator and more is the Whiznium Knowledge Base. It can be found <a href="https://mpsitech.github.io/Whiznium-Knowledge-Base" target="_blank" rel="noopener noreferrer">here (GitHub pages)</a>.</mark>
 
 Feel free to use this documentation offline by cloning it and use e.g. VSCode for Markdown rendering.
 
